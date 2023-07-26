@@ -1,9 +1,10 @@
 import React from 'react'
+import SocialMedia from './SocialMedia'
 
 function Contact() {
   return (
     <div className='bg-zinc-50' id="Contact">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:pt-16 lg:pb-5 ">
         <h1 className="my-4 text-4xl italic  font-extrabold tracking-tight leading-none text-black md:text-5xl  ">Send me a  message!</h1>
       </div>
       <form className='flex justify-center'>
@@ -34,6 +35,22 @@ function Contact() {
               
               
               <button type="submit" className=" w-full inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white  bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:focus:ring-yellow-500 shadow-sm shadow-yellow-400/50  rounded-xl">Submit</button>
+
+              <h5 className='text-2xl font-bold text-center  m-5'>Or</h5>
+              <SocialMedia blocStyle='icons w-full  flex  text-3xl gap-4 my-4 justify-center items-center text-white ' />
+              <div className=''>   
+                      <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                      <div className="relative">
+                          <div className="absolute inset-y-0 left-0  flex items-center pl-3 pointer-events-none">
+                              <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                                  <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                                  <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                              </svg>
+                          </div>
+                          <input type="search" id="default-search" className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300  bg-gray-50    " placeholder="ayoub.boudra1@gmail.com" disabled={true}/>
+                          <button type="button" className="text-white absolute right-2.5 bottom-2.5    font-medium rounded-xl text-sm px-4 py-2 bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:focus:ring-yellow-500 shadow-sm shadow-yellow-400/50">Copy</button>
+                      </div>
+              </div>
         </div>
 
       </form>

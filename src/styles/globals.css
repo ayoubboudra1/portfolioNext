@@ -2,20 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  background-color: rgb(250 250 250);
+}
 #Home{
   background-image: url("/Images/bg_home.jpg") ;
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh - 64px);
-  
+  height: calc(100vh - 64px);  
   
 }
 #About{
-  height: calc(100vh - 64px);
+  height: 100hv;
 }
 #Contact{
   height: calc(100vh - 64px);
   
+}
+@media screen and (min-width: 850px) {
+  #Home{
+    height: 100hv;
+  }
+  #About{
+    height: auto;
+  }
+  #Contact{
+    height: auto;
+  }
+}
+
+#footerEmail::placeholder{
+  color:white
 }
 
 
@@ -40,3 +57,42 @@
     right: -1000px;
   }
 }
+
+#preloading{
+  animation-name:preloading ;
+  animation-duration: 5s;
+}
+
+
+
+
+.loader {
+  /* opacity: 0.8; */
+}
+.loader span {
+  display: inline-block;
+  -webkit-animation: pulse 0.4s alternate infinite ease-in-out;
+          animation: pulse 0.4s alternate infinite ease-in-out;
+}
+.loader span:nth-child(odd) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+@-webkit-keyframes pulse {
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+@keyframes pulse {
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+
+
+
+
