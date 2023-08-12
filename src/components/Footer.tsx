@@ -42,6 +42,7 @@ function Footer() {
                         {/* text-white bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-yellow-300  shadow-lg shadow-yellow-300/50    my-2 p-2  drop-shadow-lg absolute bottom-28 left-10 right-10 rounded-xl */}
                 </div>
                 <div className='logo  w-full flex justify-center items-center italic lg:basis-1/3 mt-14 '>
+
                 <h1 className='text-2xl font-bold   '>
                     <span className='text-yellow-300 '>&lt;/</span>Ayoub_Bd<span className='text-yellow-300'>&gt;</span>    
                 </h1>

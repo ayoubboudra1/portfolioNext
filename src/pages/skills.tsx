@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer'
 import NavBar from '@/components/NavBar'
+import Skills from '@/components/Skills'
 import SocialMedia from '@/components/SocialMedia'
 import Head from 'next/head'
 import React from 'react'
@@ -27,7 +28,7 @@ function skills() {
               </div>
               <div className='body mt-16' id='home'>
                   <div>
-                      
+                      <Skills />
                   </div>
             </div>  
             <div className=''>
