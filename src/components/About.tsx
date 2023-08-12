@@ -14,7 +14,7 @@ function About() {
         <div className='flex flex-col lg:flex-row lg:items-center '>
           <Image src="/Images/profile.jpg" width={600} height={600} alt="" className=' rounded-full w-40 m-auto my-5 lg:w-1/4 ' />
           <p className='text-md text-justify  font-bold  md:text-xl w-50  lg:mx-16  '>
-              I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
+              I&apos;m a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
               I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin where I post useful content related to Web Development and Programming
           </p>
         </div>

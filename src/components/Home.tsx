@@ -5,7 +5,7 @@ function HomePage() {
   return (
     <div className="flex justify-center items-center z-0" id="Home">
           <div className="py-8 px-4  lg:mt-10 mx-auto max-w-screen-xl text-center lg:py-12">
-              <h1 className="mb-4 text-4xl lg:text-6xl font-extrabold tracking-tight leading-none text-black md:text-5xl  ">HEY, I'M AYOUB BOUDRA</h1>
+              <h1 className="mb-4 text-4xl lg:text-6xl font-extrabold tracking-tight leading-none text-black md:text-5xl  ">HEY, I&apos;M AYOUB BOUDRA</h1>
               <p className="mb-8 text-2xl font-normal  lg:text-4xl sm:px-16 lg:px-48 lg:my-12 text-gray-600">Junior-level professional skilled in software engineering and data science.</p>
               <div className="flex flex-col  hover:scale-105 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                   <a href="#" className="  inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white  bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-yellow-300  shadow-sm shadow-yellow-400/50  lg:mt-12     rounded-xl">
