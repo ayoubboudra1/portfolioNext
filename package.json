@@ -1,5 +1,6 @@
 {
   "name": "my-portfolio",
+  "main": "server.js",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,8 +20,6 @@
     "bootstrap-icons": "^1.10.5",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
-    "firebase": "^9.22.2",
-    "firebase-admin": "^11.9.0",
     "framer-motion": "^10.12.18",
     "gsap": "^3.12.2",
     "next": "13.4.5",
