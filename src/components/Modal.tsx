@@ -27,12 +27,12 @@ export default function Example() {
 
   return (
     <>
-    
-    <button className="w-full rounded-md   py-2 text-white bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 hover:bg-gradient-to-br focus:ring-4  focus:outline-none focus:ring-yellow-300 drop-shadow-lg  shadow-lg shadow-yellow-300/50 hover:0 hover:shadow-md duration-75 "
+    <button className="w-full rounded-md   py-2 text-white  bg-yellow-400  shadow-lg   "
             onClick={()=>setOpen(true)}
     >
                 See More
-    </button>
+              </button>
+    
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-50 " onClose={setOpen}>
         <Transition.Child
@@ -113,10 +113,11 @@ export default function Example() {
                           </div>
                         </div>
                       </section>
+                      
 
                       
                     </div>
-                  </div>
+                  </div>                  
                 </div>
               </Dialog.Panel>
             </Transition.Child>

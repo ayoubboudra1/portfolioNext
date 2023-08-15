@@ -4,6 +4,7 @@
 
 body{
   background-color: rgb(250 250 250);
+  overflow-x: hidden;
 }
 #Home{
   background-image: url("/Images/bg_home.jpg") ;
@@ -93,6 +94,17 @@ body{
   }
 }
 
+#navbar{
 
+}
+
+
+.one:hover span:last-child {
+  width: 100%;
+ 
+}
+.two span:last-child{
+  width: 100%;
+}
 
 
