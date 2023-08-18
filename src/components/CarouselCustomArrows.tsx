@@ -1,10 +1,10 @@
-import { Carousel, IconButton } from "@material-tailwind/react";
- 
+import { Carousel, IconButton } from '@material-tailwind/react'
+
 export function CarouselCustomArrows() {
   return (
     <Carousel
       className="rounded-xl"
-      prevArrow={({ handlePrev }:any) => (
+      prevArrow={({ handlePrev }: any) => (
         <IconButton
           variant="text"
           color="white"
@@ -69,5 +69,5 @@ export function CarouselCustomArrows() {
         className="h-full w-full object-cover"
       />
     </Carousel>
-  );
+  )
 }
