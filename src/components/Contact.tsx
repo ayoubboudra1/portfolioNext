@@ -2,6 +2,16 @@ import React, { useEffect, useRef } from 'react'
 import SocialMedia from './SocialMedia'
 import { motion, AnimatePresence, useAnimation, useInView } from 'framer-motion'
 import { useRouter } from 'next/router'
+import { useForm } from 'react-hook-form'
+import { SubmitHandler } from 'react-hook-form/dist/types'
+import { sendContactForm } from '@/lib/api'
+
+export type EmailInput = {
+  firstName: string
+  lastName: string
+  emailAdresse: string
+  message: string
+}
 
 function Contact() {
   const router = useRouter()
@@ -13,13 +23,24 @@ function Contact() {
       controls.start('visible')
     }
   }, [controls, isInView])
+
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm<EmailInput>()
+  const onSubmit: SubmitHandler<EmailInput> = async (data) => {
+    await sendContactForm(data)
+  }
+
   return (
     <div className="bg-zinc-50" id="Contact">
       <AnimatePresence mode="popLayout">
         <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:pt-10 lg:pb-5 ">
           <motion.h1
             className=" text-4xl italic  font-extrabold tracking-tight leading-none text-black md:text-5xl  "
-            ref={ref}
+            // ref={ref}
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -10, opacity: 0 }}
@@ -28,10 +49,10 @@ function Contact() {
             Send me a message!
           </motion.h1>
         </div>
-        <form className="flex justify-center">
+        <form className="flex justify-center" onSubmit={handleSubmit(onSubmit)}>
           <motion.div
             className="m-4 w-full lg:w-1/2 rounded-xl  shadow-lg bg-white px-10 py-4 "
-            ref={ref}
+            // ref={ref}
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -10, opacity: 0 }}
@@ -41,11 +62,14 @@ function Contact() {
               <div className="relative z-0 w-full mb-6 group">
                 <input
                   type="text"
-                  name="floating_first_name"
+                  // name="floating_first_name"
                   id="floating_first_name"
                   className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-400 appearance-none    focus:outline-none focus:ring-0 focus:border-yellow-400 peer rounded-none"
                   placeholder=" "
-                  required
+                  {...register('firstName', {
+                    required: true,
+                    pattern: /^[a-zA-Z]{2,30}$/i,
+                  })}
                 />
                 <label
                   htmlFor="floating_first_name"
@@ -57,11 +81,14 @@ function Contact() {
               <div className="relative z-0 w-full mb-6 group">
                 <input
                   type="text"
-                  name="floating_last_name"
+                  // name="floating_last_name"
                   id="floating_last_name"
                   className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-400 appearance-none  focus:outline-none focus:ring-0 focus:border-yellow-400 peer rounded-none"
                   placeholder=" "
-                  required
+                  {...register('lastName', {
+                    required: true,
+                    pattern: /^[A-Za-z]+$/i,
+                  })}
                 />
                 <label
                   htmlFor="floating_last_name"
@@ -75,11 +102,13 @@ function Contact() {
             <div className="relative z-0 w-full mb-6 group">
               <input
                 type="email"
-                name="floating_email"
                 id="floating_email"
                 className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-400 appearance-none  focus:outline-none focus:ring-0 focus:border-yellow-400 peer rounded-none"
                 placeholder=" "
-                required
+                {...register('emailAdresse', {
+                  required: true,
+                  pattern: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/i,
+                })}
               />
               <label
                 htmlFor="floating_email"
@@ -90,11 +119,10 @@ function Contact() {
             </div>
             <div className="relative z-0 w-full mb-6 group">
               <textarea
-                name="floating_email"
                 id="floating_email"
                 className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-400 appearance-none    focus:outline-none focus:ring-0 focus:border-yellow-400 peer rounded-none"
                 placeholder=" "
-                required
+                {...register('message', { required: true })}
                 style={{ height: '120px' }}
               />
               <label

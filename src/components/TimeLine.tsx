@@ -28,7 +28,7 @@ function TimeLine() {
                     }}
                   ></div>
                   {myInfo.myExperience.map((item, index) => (
-                    <TimeLineItem index={index} item={item} />
+                    <TimeLineItem key={index} index={index} item={item} />
                   ))}
                 </div>
               </div>
