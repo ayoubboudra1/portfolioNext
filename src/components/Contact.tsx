@@ -4,7 +4,7 @@ import { motion, AnimatePresence, useAnimation, useInView } from 'framer-motion'
 import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
 import { SubmitHandler } from 'react-hook-form/dist/types'
-import { sendContactForm } from '@/lib/api'
+
 
 export type EmailInput = {
   firstName: string
@@ -31,7 +31,14 @@ function Contact() {
     formState: { errors },
   } = useForm<EmailInput>()
   const onSubmit: SubmitHandler<EmailInput> = async (data) => {
-    await sendContactForm(data)
+    fetch('/api/contact',{
+      method:'POST',
+      body : JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+        Accept : "application/json"
+      },
+    }).catch(error => console.log(error.message))
   }
 
   return (
@@ -137,7 +144,7 @@ function Contact() {
               </div> */}
 
             <button
-              type="submit"
+              type='submit'
               className=" w-full  inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white  bg-yellow-400  shadow-sm  rounded-xl"
             >
               Submit
