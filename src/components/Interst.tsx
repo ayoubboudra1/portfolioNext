@@ -6,30 +6,16 @@ function Interst() {
     <section className=" ">
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-          <div className="flex justify-center items-center flex-col">
-            <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-              <svg
-                className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              {/* {myInfo.areasOfInterst[0].icon} */}
+          {myInfo.areasOfInterst.map((value, index) => (
+            <div className="flex justify-center items-center flex-col">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
+                {value.icon}
+              </div>
+              <h3 className="mb-2 text-xl font-bold ">{value.title}</h3>
+              <p className="text-gray-500 text-center">{value.description}</p>
             </div>
-            <h3 className="mb-2 text-xl font-bold ">Marketing</h3>
-            <p className="text-gray-500 text-center">
-              Plan it, create it, launch it. Collaborate seamlessly with all the
-              organization and hit your marketing goals every month with our
-              marketing plan.
-            </p>
-          </div>
-          <div className="flex justify-center items-center flex-col">
+          ))}
+          {/* <div className="flex justify-center items-center flex-col">
             <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
               <svg
                 className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
@@ -67,7 +53,7 @@ function Interst() {
               Auto-assign tasks, send Slack messages, and much more. Now power
               up with hundreds of new templates to help you get started.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

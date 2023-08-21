@@ -1,6 +1,7 @@
 import React from 'react'
 import SocialMedia from './SocialMedia'
 import Link from 'next/link'
+import EmailInput from './EmailInput'
 
 function Footer() {
   const year = new Date().getFullYear()
@@ -31,7 +32,7 @@ function Footer() {
             >
               Search
             </label>
-            <div className="relative ">
+            {/* <div className="relative ">
               <div className="absolute inset-y-0 left-0  flex items-center pl-5 pointer-events-none">
                 <svg
                   className="w-4 h-4 text-gray-500 "
@@ -57,6 +58,9 @@ function Footer() {
               >
                 Copy
               </button>
+            </div> */}
+            <div className="relative md:w-1/2 m-auto md:m-0 lg:w-full">
+              <EmailInput />
             </div>
           </div>
         </div>

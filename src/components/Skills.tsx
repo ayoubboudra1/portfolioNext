@@ -1,6 +1,8 @@
+import { myInfo } from '@/data/myInfo'
 import { AnimatePresence, motion, useAnimation, useInView } from 'framer-motion'
 import { useRouter } from 'next/router'
 import React, { useRef, useEffect } from 'react'
+import OneSkill from './OneSkill'
 
 function Skills() {
   const router = useRouter()
@@ -43,194 +45,22 @@ function Skills() {
             </h1>
             <div className="gap-8 sm:grid sm:grid-cols-2 mt-10">
               <div>
-                <dl>
-                  <dt className="text-sm font-medium  ">Staff</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '88%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.8</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Comfort</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.9</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Free WiFi</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.8</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Facilities</dt>
-                  <dd className="flex items-center">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '59%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">5.4</span>
-                  </dd>
-                </dl>
+                {myInfo.technicalSkillsLeft.map((value, index) => (
+                  <OneSkill
+                    key={'L' + index}
+                    skillName={value.skillName}
+                    percentage={value.percentage}
+                  />
+                ))}
               </div>
               <div>
-                <dl>
-                  <dt className="text-sm font-medium  ">Value for money</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.9</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Cleanliness</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">7.0</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Location</dt>
-                  <dd className="flex items-center">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.9</span>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div
-            ref={ref}
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -10, opacity: 0 }}
-            transition={{ duration: 0.9 }}
-            className="p-5 border  mx-5 my-10 md:mx-20 border-white rounded-lg bg-white shadow-md"
-          >
-            <time className="text-2xl md:text-3xl font-bold text-gray-900 ">
-              Soft Skills
-            </time>
-            <div className="gap-8 sm:grid sm:grid-cols-2 mt-10">
-              <div>
-                <dl>
-                  <dt className="text-sm font-medium  ">Staff</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '88%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.8</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Comfort</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.9</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Free WiFi</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.8</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Facilities</dt>
-                  <dd className="flex items-center">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '59%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">5.4</span>
-                  </dd>
-                </dl>
-              </div>
-              <div>
-                <dl>
-                  <dt className="text-sm font-medium  ">Value for money</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.9</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Cleanliness</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">7.0</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Location</dt>
-                  <dd className="flex items-center">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.9</span>
-                  </dd>
-                </dl>
+                {myInfo.technicalSkillsRight.map((value, index) => (
+                  <OneSkill
+                    key={'R' + index}
+                    skillName={value.skillName}
+                    percentage={value.percentage}
+                  />
+                ))}
               </div>
             </div>
           </motion.div>
@@ -243,97 +73,21 @@ function Skills() {
             className="p-5 border  mx-5 my-10 md:mx-20 border-white rounded-lg bg-white shadow-md"
           >
             <h1 className="text-2xl md:text-3xl font-bold text-gray-900 ">
-              Transferable Skills
+              Soft Skills
             </h1>
-            <div className="gap-8 sm:grid sm:grid-cols-2 mt-10">
-              <div>
-                <dl>
-                  <dt className="text-sm font-medium  ">Staff</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '88%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.8</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Comfort</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.9</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Free WiFi</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.8</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Facilities</dt>
-                  <dd className="flex items-center">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '59%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">5.4</span>
-                  </dd>
-                </dl>
-              </div>
-              <div>
-                <dl>
-                  <dt className="text-sm font-medium  ">Value for money</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.9</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Cleanliness</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">7.0</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Location</dt>
-                  <dd className="flex items-center">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.9</span>
-                  </dd>
-                </dl>
-              </div>
+            <div className="gap-8 sm:grid sm:grid-cols-4 mt-10">
+              {myInfo.softSkills.map((value, index) => (
+                <div className="flex justify-center items-center flex-col">
+                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
+                    {value.icon}
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold ">{value.name}</h3>
+
+                  {/* <div className="flex items-center space-x-1">
+                    {value.stars}
+                  </div> */}
+                </div>
+              ))}
             </div>
           </motion.div>
           <motion.div
@@ -347,95 +101,19 @@ function Skills() {
             <h1 className="text-2xl md:text-3xl font-bold text-gray-900 ">
               Languages
             </h1>
-            <div className="gap-8 sm:grid sm:grid-cols-2 mt-10">
-              {/* <div>
-                <dl>
-                  <dt className="text-sm font-medium  ">Staff</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '88%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.8</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Comfort</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.9</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Free WiFi</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.8</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Facilities</dt>
-                  <dd className="flex items-center">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '59%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">5.4</span>
-                  </dd>
-                </dl>
-              </div> */}
-              <div>
-                <dl>
-                  <dt className="text-sm font-medium  ">Value for money</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.9</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Cleanliness</dt>
-                  <dd className="flex items-center mb-3">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">7.0</span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="text-sm font-medium  ">Location</dt>
-                  <dd className="flex items-center">
-                    <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-                      <div
-                        className="bg-yellow-400 h-2.5 rounded "
-                        style={{ width: '89%' }}
-                      ></div>
-                    </div>
-                    <span className="text-sm font-medium  ">8.9</span>
-                  </dd>
-                </dl>
-              </div>
+            <div className="gap-8 sm:grid sm:grid-cols-3 mt-10">
+              {myInfo.languages.map((value, index) => (
+                <div className="flex justify-center items-center flex-col">
+                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
+                    {value.icon}
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold ">{value.name}</h3>
+
+                  <div className="flex items-center space-x-1">
+                    {value.stars}
+                  </div>
+                </div>
+              ))}
             </div>
           </motion.div>
         </div>

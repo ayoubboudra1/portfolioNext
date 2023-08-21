@@ -4,6 +4,7 @@ import { motion, AnimatePresence, useAnimation, useInView } from 'framer-motion'
 import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
 import { SubmitHandler } from 'react-hook-form/dist/types'
+import EmailInput from './EmailInput'
 
 export type EmailInput = {
   firstName: string
@@ -158,32 +159,8 @@ function Contact() {
               >
                 Search
               </label>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0  flex items-center pl-3 pointer-events-none">
-                  <svg
-                    className="w-4 h-4 text-gray-500 "
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 16"
-                  >
-                    <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
-                    <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
-                  </svg>
-                </div>
-                <input
-                  type="search"
-                  id="default-search"
-                  className="block rounded-xl w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300  bg-gray-50    "
-                  placeholder="ayoub.boudra1@gmail.com"
-                  disabled={true}
-                />
-                <button
-                  type="button"
-                  className="text-white absolute hover:scale-105 right-2.5 bottom-2.5  bg-yellow-400  font-medium rounded-xl text-sm px-4 py-2   shadow-sm "
-                >
-                  Copy
-                </button>
+              <div className="relative w-full">
+                <EmailInput />
               </div>
             </div>
           </motion.div>
