@@ -77,15 +77,12 @@ function Skills() {
             </h1>
             <div className="gap-8 sm:grid sm:grid-cols-4 mt-10">
               {myInfo.softSkills.map((value, index) => (
-                <div className="flex justify-center items-center flex-col">
+                <div className="flex justify-center items-center flex-col" key={'soft'+index}>
                   <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
                     {value.icon}
                   </div>
                   <h3 className="mb-2 text-xl font-bold ">{value.name}</h3>
 
-                  {/* <div className="flex items-center space-x-1">
-                    {value.stars}
-                  </div> */}
                 </div>
               ))}
             </div>
@@ -103,7 +100,7 @@ function Skills() {
             </h1>
             <div className="gap-8 sm:grid sm:grid-cols-3 mt-10">
               {myInfo.languages.map((value, index) => (
-                <div className="flex justify-center items-center flex-col">
+                <div className="flex justify-center items-center flex-col" key={'Lang'+index}>
                   <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
                     {value.icon}
                   </div>

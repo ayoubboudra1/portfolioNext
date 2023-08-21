@@ -1,3 +1,4 @@
+
 import About from '@/components/About'
 import Footer from '@/components/Footer'
 import NavBar from '@/components/NavBar'
@@ -11,7 +12,7 @@ import { forwardRef } from 'react'
 type IndexPageProps = {}
 type IndexPageRef = React.ForwardedRef<HTMLDivElement>
 
-function about(props: IndexPageProps, ref: IndexPageRef) {
+function AboutPage(props: IndexPageProps, ref: IndexPageRef) {
   const [isVisible, setIsVisible] = useState(true)
   const [height, setHeight] = useState(0)
 
@@ -52,14 +53,8 @@ function about(props: IndexPageProps, ref: IndexPageRef) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className="w-full ">
-          {/* <PreLoading /> */}
 
           <div className="page absolute">
-            {/* <div className='navbar '>
-                  
-                  
-                  
-              </div> */}
             <div className="body mt-16" id="home">
               <div>
                 <About />
@@ -75,4 +70,4 @@ function about(props: IndexPageProps, ref: IndexPageRef) {
   )
 }
 
-export default forwardRef(about)
+export default forwardRef(AboutPage)
