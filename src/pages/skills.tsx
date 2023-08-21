@@ -10,7 +10,7 @@ import { forwardRef } from 'react'
 type IndexPageProps = {}
 type IndexPageRef = React.ForwardedRef<HTMLDivElement>
 
-function skills(props: IndexPageProps, ref: IndexPageRef) {
+function SkillsPage(props: IndexPageProps, ref: IndexPageRef) {
   const [isVisible, setIsVisible] = useState(true)
   const [height, setHeight] = useState(0)
 
@@ -77,4 +77,4 @@ function skills(props: IndexPageProps, ref: IndexPageRef) {
   )
 }
 
-export default forwardRef(skills)
+export default forwardRef(SkillsPage)

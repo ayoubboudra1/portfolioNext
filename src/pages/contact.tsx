@@ -10,7 +10,7 @@ import { forwardRef } from 'react'
 
 type IndexPageProps = {}
 type IndexPageRef = React.ForwardedRef<HTMLDivElement>
-function contact(props: IndexPageProps, ref: IndexPageRef) {
+function ContactPage(props: IndexPageProps, ref: IndexPageRef) {
   return (
     <>
       <NavBar />
@@ -44,4 +44,4 @@ function contact(props: IndexPageProps, ref: IndexPageRef) {
   )
 }
 
-export default forwardRef(contact)
+export default forwardRef(ContactPage)

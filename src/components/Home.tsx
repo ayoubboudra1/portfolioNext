@@ -5,7 +5,7 @@ import { motion, AnimatePresence, useAnimation, useInView } from 'framer-motion'
 import { useRouter } from 'next/router'
 import { myInfo } from '@/data/myInfo'
 
-function HomePage() {
+function Home() {
   const router = useRouter()
   const controls = useAnimation()
   const ref = useRef(null)
@@ -79,4 +79,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default Home

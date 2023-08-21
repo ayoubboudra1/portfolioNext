@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import NavBar from '@/components/NavBar'
-import HomePage from '@/components/Home'
+import Home from '@/components/Home'
 import SocialMedia from '@/components/SocialMedia'
 import Footer from '@/components/Footer'
 import About from '@/components/About'
@@ -18,7 +18,7 @@ const inter = Inter({ subsets: ['latin'] })
 type IndexPageProps = {}
 type IndexPageRef = React.ForwardedRef<HTMLDivElement>
 
-function Home(props: IndexPageProps, ref: IndexPageRef) {
+function HomePage(props: IndexPageProps, ref: IndexPageRef) {
   const [isVisible, setIsVisible] = useState(true)
   const [height, setHeight] = useState(0)
 
@@ -65,7 +65,7 @@ function Home(props: IndexPageProps, ref: IndexPageRef) {
             <div className="navbar "></div>
             <div className="body mt-16" id="">
               <div>
-                <HomePage />
+                <Home />
               </div>
             </div>
             <div className="">
@@ -78,4 +78,4 @@ function Home(props: IndexPageProps, ref: IndexPageRef) {
   )
 }
 
-export default forwardRef(Home)
+export default forwardRef(HomePage)

@@ -10,7 +10,7 @@ import { forwardRef } from 'react'
 
 type IndexPageProps = {}
 type IndexPageRef = React.ForwardedRef<HTMLDivElement>
-function project(props: IndexPageProps, ref: IndexPageRef) {
+function ProjectPage(props: IndexPageProps, ref: IndexPageRef) {
   const [isVisible, setIsVisible] = useState(true)
   const [height, setHeight] = useState(0)
   const [showModal, setShowModal] = useState(false)
@@ -71,4 +71,4 @@ function project(props: IndexPageProps, ref: IndexPageRef) {
   )
 }
 
-export default forwardRef(project)
+export default forwardRef(ProjectPage)
