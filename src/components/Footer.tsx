@@ -1,7 +1,8 @@
 import React from 'react'
 import SocialMedia from './SocialMedia'
 import Link from 'next/link'
-import EmailInput from './EmailInput'
+import EmailInput from './CopyInput'
+import { myInfo } from '@/data/myInfo'
 
 function Footer() {
   const year = new Date().getFullYear()
@@ -60,7 +61,10 @@ function Footer() {
               </button>
             </div> */}
             <div className="relative md:w-1/2 m-auto md:m-0 lg:w-full">
-              <EmailInput />
+              <EmailInput copyText={myInfo.myEmail} icon={<i className="w-5 h-5 text-gray-500 bi bi bi-envelope-fill"></i>} />
+            </div>
+            <div className="relative md:w-1/2 m-auto my-2 md:m-0 md:my-2 lg:w-full">
+              <EmailInput copyText={myInfo.myPhone} icon={<i className="w-5 h-5 text-gray-500 bi bi-telephone-fill"></i>} />
             </div>
           </div>
         </div>

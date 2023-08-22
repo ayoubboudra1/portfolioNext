@@ -67,6 +67,8 @@ function HomePage(props: IndexPageProps, ref: IndexPageRef) {
               <div>
                 <Home />
               </div>
+              <div>
+              </div>
             </div>
             <div className="">
               <Footer />

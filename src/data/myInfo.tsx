@@ -3,6 +3,7 @@ import Image from 'next/image'
 export const myInfo = {
   fullName: 'AYOUB BOUDRA',
   myEmail: 'ayoub.boudra1@gmail.com',
+  myPhone : '+212632697321',
   smallDescription:
     'Junior-level professional skilled in software engineering and data science.',
   myImagePath: '/Images/profile.jpg',

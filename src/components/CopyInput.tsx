@@ -1,12 +1,18 @@
 import { myInfo } from '@/data/myInfo'
 import React, { useState } from 'react'
 import {CopyToClipboard} from 'react-copy-to-clipboard'
+import { EmailInput } from './Contact'
 
-function EmailInput() {
+export interface CopyInputProps{
+  copyText : string
+  icon : any
+}
+
+function CopyInput({copyText,icon}:CopyInputProps) {
   const [isCopied, setIsCopied] = useState(
     <i className="bi bi-clipboard w-5 h-5"></i>,
   )
-  const copyText = myInfo.myEmail
+
   const handleCopyClick = () => {
         setTimeout(() => {
           setIsCopied(
@@ -46,8 +52,8 @@ function EmailInput() {
 
   return (
     <>
-      <div className="absolute inset-y-0 left-0  flex items-center pl-3 pointer-events-none">
-        <svg
+      <div className="absolute inset-y-0 left-0   flex items-center pl-3 pointer-events-none">
+        {/* <svg
           className="w-4 h-4 text-gray-500 "
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
@@ -56,13 +62,14 @@ function EmailInput() {
         >
           <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
           <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
-        </svg>
+        </svg> */}
+        {icon}
       </div>
       <input
         type="search"
         id="default-search"
         className="block rounded-xl w-full  p-4 pl-10 text-sm text-gray-900 border border-gray-300  bg-white   "
-        placeholder={myInfo.myEmail}
+        placeholder={copyText}
         disabled={true}
       />
       <CopyToClipboard text={copyText}>
@@ -79,4 +86,4 @@ function EmailInput() {
   )
 }
 
-export default EmailInput
+export default CopyInput
