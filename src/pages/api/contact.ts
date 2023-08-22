@@ -4,8 +4,8 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 
 const nodemailer = require('nodemailer')
 
-const email = process.env.EMAIL
-const pass = process.env.EMAIL_PASS
+const email = 'bd.ayoub07@gmail.com'
+const pass = 'grduhipvetlpgqeb'
 
 export const transporter = nodemailer.createTransport({
   service: 'gmail',
