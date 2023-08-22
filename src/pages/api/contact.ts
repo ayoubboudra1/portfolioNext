@@ -37,8 +37,11 @@ const handler = (
             message: error.message,
           })
         }
+        else{
+          return res.status(200).json({ message: 'Send Success' })
+        }
       })
-      return res.status(200).json({ message: 'Send Success' })
+      
     }
   }
 
