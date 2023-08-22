@@ -208,16 +208,3 @@ function Contact() {
 }
 
 export default Contact
-import type { NextApiRequest, NextApiResponse } from 'next'
-
-
-const handler = (
-  req: NextApiRequest,
-  res: NextApiResponse<EmailInput | { message: string }>,
-) => {
-  return res.status(200).json({
-    message : 'Hello world'
-  })
-}
-
-export default handler
