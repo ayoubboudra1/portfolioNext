@@ -1,24 +1,13 @@
 import { myInfo } from '@/data/myInfo'
 import React, { useState } from 'react'
+import {CopyToClipboard} from 'react-copy-to-clipboard'
 
 function EmailInput() {
   const [isCopied, setIsCopied] = useState(
     <i className="bi bi-clipboard w-5 h-5"></i>,
   )
   const copyText = myInfo.myEmail
-  async function copyTextToClipboard(text: string) {
-    if ('clipboard' in navigator) {
-      return await navigator.clipboard.writeText(text)
-    } else {
-      return document.execCommand('copy', true, text)
-    }
-  }
-
   const handleCopyClick = () => {
-    // Asynchronously call copyTextToClipboard
-    copyTextToClipboard(copyText)
-      .then(() => {
-        // If successful, update the isCopied state value
         setTimeout(() => {
           setIsCopied(
             <div role="status">
@@ -49,10 +38,10 @@ function EmailInput() {
         setTimeout(() => {
           setIsCopied(<i className="bi bi-clipboard w-5 h-5"></i>)
         }, 2500)
-      })
-      .catch((err) => {
-        console.log(err)
-      })
+      // })
+      // .catch((err) => {
+      //   console.log(err)
+      // })
   }
 
   return (
@@ -76,13 +65,16 @@ function EmailInput() {
         placeholder={myInfo.myEmail}
         disabled={true}
       />
-      <button
+      <CopyToClipboard text={copyText}>
+        <button
         type="button"
         onClick={handleCopyClick}
         className="text-white absolute hover:scale-105 w-10 h-10  right-2.5 bottom-2  bg-yellow-400  font-medium rounded-xl text-sm px-4 py-2 flex justify-center items-center  shadow-sm "
       >
         {isCopied}
       </button>
+      </CopyToClipboard>
+      
     </>
   )
 }
