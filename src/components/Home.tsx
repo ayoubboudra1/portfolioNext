@@ -21,7 +21,7 @@ function Home() {
       <div className="py-8 px-4  lg:mt-10 mx-auto max-w-screen-xl text-center lg:py-12">
         <AnimatePresence mode="popLayout">
           <motion.h1
-            className="mb-4 text-4xl lg:text-6xl font-extrabold tracking-tight leading-none text-black md:text-5xl"
+            className="mb-4 text-4xl lg:text-7xl font-extrabold tracking-tight leading-none text-black md:text-5xl"
             ref={ref}
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -55,7 +55,8 @@ function Home() {
             <Link href="/about">
               <button className="mx-16  rounded-xl  relative h-[50px] w-44 overflow-hidden   bg-yellow-400 px-3 text-white shadow-lg hover:scale-105">
                 <span className="relative z-10  inline-flex justify-center items-center font-bold text-xl">
-                  About me
+                  About 
+                  {/* ME */}
                   <svg
                     aria-hidden="true"
                     className="ml-2 -mr-1 w-5 h-5"

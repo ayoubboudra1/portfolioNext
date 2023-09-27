@@ -2,6 +2,7 @@ import Footer from '@/components/Footer'
 import Modal from '@/components/Modal'
 import NavBar from '@/components/NavBar'
 import PageTransition from '@/components/PageTransition'
+import { ProjectProps, project0 } from '@/components/ProjectCard'
 import Projects from '@/components/Projects'
 import SocialMedia from '@/components/SocialMedia'
 import Head from 'next/head'
@@ -12,6 +13,7 @@ type IndexPageProps = {}
 type IndexPageRef = React.ForwardedRef<HTMLDivElement>
 function ProjectPage(props: IndexPageProps, ref: IndexPageRef) {
   const [isVisible, setIsVisible] = useState(true)
+  const [content,setContent] = useState<ProjectProps>(project0)
   const [height, setHeight] = useState(0)
   const [showModal, setShowModal] = useState(false)
 
@@ -41,7 +43,7 @@ function ProjectPage(props: IndexPageProps, ref: IndexPageRef) {
   return (
     <>
       {showModal ? (
-        <Modal showModal={showModal} setShowModal={setShowModal} />
+        <Modal showModal={showModal} setShowModal={setShowModal} content={content} />
       ) : null}
       <NavBar />
       <div className={isVisible ? visibleClassName : disapearClassName}>
@@ -58,7 +60,7 @@ function ProjectPage(props: IndexPageProps, ref: IndexPageRef) {
           <div className="page absolute">
             <div className="body mt-16" id="home">
               <div className="">
-                <Projects showModal={showModal} setShowModal={setShowModal} />
+                <Projects showModal={showModal} setShowModal={setShowModal} setContent={setContent} />
               </div>
             </div>
             <div className="">

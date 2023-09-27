@@ -5,94 +5,77 @@ export const myInfo = {
   myEmail: 'ayoub.boudra1@gmail.com',
   myPhone : '+212632697321',
   smallDescription:
-    'Junior-level professional skilled in software engineering and data science.',
+    "I am a junior Web Developer  and Data Scientist passionate about continuous learning and exploring emerging technologies.",
   myImagePath: '/Images/profile.jpg',
   descriptionAboutMe:
-    "I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section. I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin where I post useful content related to Web Development and Programming",
+    <>
+         I am a passionate individual pursuing a master's degree in <i className='text-yellow-400'>Data Science 
+         & Intelligent Systems</i> at the Faculty of Science and Technologies Fes. 
+         <br />
+         <br />
+         I am a creative problem solver with strong analytical skills. I am flexible and embrace new challenges.
+         I am constantly seeking opportunities to learn and grow.
+         I have acquired valuable skills that enable me to seamlessly integrate into teams and progress
+          in my career.
+    </>,
   myExperience: [
     {
-      title: 'Registration',
-      date: '1-6 May, 2021',
+      title: 'DEUST degree in Mathematics, Physics, and Computer Science.', 
+      location : 'Faculty Of Science And Technology',
+      date: '2018 , 2021',
       description:
-        'Pick your favourite event(s) and register in that event by filling the form corresponding to that event. Its that easy',
+        "The degree program provides a comprehensive education in mathematics, physics, and computer science, equipping me with essential skills in these domains.",
     },
     {
-      title: 'Registration',
-      date: '1-6 May, 2021',
+      title: "Bachelor's degree in Computer Science.",
+      location : 'Faculty Of Science And Technology',
+      date: '2021, 2022',
       description:
-        'Pick your favourite event(s) and register in that event by filling the form corresponding to that event. Its that easy',
+        'This degree has provided me with a fundamental understanding of computer science and its basic concepts. It has equipped me with essential skills in various areas of computer science, allowing me to grasp the foundational principles and concepts in the field.',
     },
     {
-      title: 'Registration',
-      date: '1-6 May, 2021',
+      title: 'Internship as a Full-stack Web Developer.',
+      location : 'INNOV-DS',
+      date: 'April-June, 2022',
       description:
-        'Pick your favourite event(s) and register in that event by filling the form corresponding to that event. Its that easy',
+        'I gained valuable skills in Next.js, TypeScript, Tailwind CSS, and Java Spring Boot. I also learned how to effectively manage teamwork using Scrum methodologies and work with RESTful APIs.',
     },
     {
-      title: 'Registration',
-      date: '1-6 May, 2021',
+      title: "Master's in Data Science & Intelligent Systems.",
+      location : 'Faculty Of Science And Technology',
+      date: '2022, Today',
       description:
-        'Pick your favourite event(s) and register in that event by filling the form corresponding to that event. Its that easy',
+        "provides a strong foundation in essential aspects of data science and artificial intelligence. It covers topics like machine learning, knowledge engineering, and analyzing large datasets. The program also includes modules focused on development, offering practical skills in software development.",
     },
   ],
   areasOfInterst: [
     {
-      title: 'Marketing',
+      title: 'Web Development',
       description:
-        'Plan it, create it, launch it. Collaborate seamlessly with all  the organization and hit your marketing goals every month with our marketing plan.',
+      "Experienced in developing secure, dynamic, and responsive web applications using ReactJS, Angular, TypeScript, Tailwind CSS, and Java.",
       icon: (
-        <svg
-          className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
-            clip-rule="evenodd"
-          ></path>
+          <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
+              fill="currentColor"
+              viewBox="0 0 20 20">
+          <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
         </svg>
       ),
     },
     {
-      title: 'Legal',
+      title: 'Data Science',
       description:
-        'Protect your organization, devices and stay compliant with our structured workflows and custom permissions made for you.',
+       "Experienced in data science using Python, SQL, and machine learning algorithms. Proficient in data analysis, statistical modeling, and visualization for actionable insights from complex datasets.",
       icon: (
-        <svg
-          className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
-            clip-rule="evenodd"
-          ></path>
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
+        fill="currentColor"
+        viewBox="0 0 20 20">
+          <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
         </svg>
       ),
     },
-    {
-      title: 'Businesse Automation',
-      description:
-        'Auto-assign tasks, send Slack messages, and much more. Now power up with hundreds of new templates to help you get started.',
-      icon: (
-        <svg
-          className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      ),
-    },
+
   ],
   technicalSkillsLeft: [
     {
@@ -300,5 +283,114 @@ export const myInfo = {
       icon : (<svg className='hover:scale-105 cursor-pointer' width="800px" height="800px" viewBox="0 0 32 32" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><defs></defs><title/><path className="text-black" d="M26.93,28.63c0-.05-1.93-4.85-1.93-7.63a7,7,0,0,1,.74-2.9A14.43,14.43,0,0,0,27,12C27,6.21,22.37,2,16,2,10.18,2,6.28,4.75,5,9.76a10.43,10.43,0,0,0-.1,5.14L3.27,18.14a2,2,0,0,0,1,2.57,3.69,3.69,0,0,0,.87.23L6,25.14a1.87,1.87,0,0,0,.55,1.09A3.6,3.6,0,0,0,9.2,27a2.45,2.45,0,0,1,1.79.47,1,1,0,0,1,.31.36l.81,1.62a1,1,0,1,0,1.78-.9l-.8-1.61a3.16,3.16,0,0,0-.9-1.08,4.5,4.5,0,0,0-3-.86A2,2,0,0,1,8,24.81H8l-1-5A1,1,0,0,0,6,19a2.49,2.49,0,0,1-.87-.12l1.76-3.42a1,1,0,0,0,0-.83,7.94,7.94,0,0,1,0-4.39C8,6.16,11.11,4,16,4c5.21,0,9,3.36,9,8a12.41,12.41,0,0,1-1.11,5.34A8.81,8.81,0,0,0,23,21c0,3.16,2,8.16,2.07,8.37A1,1,0,0,0,26,30a1,1,0,0,0,.37-.07A1,1,0,0,0,26.93,28.63Z"/><circle className="text-black" cx="16" cy="13" r="2"/><path className="cls-1" d="M23.5,12.72a2,2,0,0,0-1.37-1.9l-.48-.16.22-.45a2,2,0,0,0-.37-2.32l-.39-.39a2,2,0,0,0-2.31-.37l-.46.22-.16-.48a2,2,0,0,0-1.9-1.37h-.56a2,2,0,0,0-1.9,1.37l-.16.48-.45-.22a2,2,0,0,0-2.32.37l-.39.39a2,2,0,0,0-.37,2.31l.22.46-.48.16a2,2,0,0,0-1.37,1.9v.56a2,2,0,0,0,1.37,1.9l.48.16-.22.45a2,2,0,0,0,.37,2.32l.39.39a2,2,0,0,0,2.31.38l.46-.23.16.48a2,2,0,0,0,1.9,1.37h.56a2,2,0,0,0,1.9-1.37l.16-.48.45.22a2,2,0,0,0,2.32-.37l.39-.39a2,2,0,0,0,.38-2.31l-.23-.46.48-.16a2,2,0,0,0,1.37-1.9Zm-2,.56-1.33.44a1,1,0,0,0-.63.61,2.6,2.6,0,0,1-.1.25,1,1,0,0,0,0,.86l.63,1.25-.4.4-1.25-.63a1,1,0,0,0-.86,0l-.25.1a1,1,0,0,0-.61.63l-.44,1.33h-.56l-.44-1.33a1,1,0,0,0-.61-.63l-.25-.1a1,1,0,0,0-.41-.08,1,1,0,0,0-.45.1l-1.25.63-.4-.4.63-1.25a1,1,0,0,0,0-.86,2.6,2.6,0,0,1-.1-.25,1,1,0,0,0-.63-.61l-1.33-.44v-.56l1.33-.44a1,1,0,0,0,.63-.61,2.6,2.6,0,0,1,.1-.25,1,1,0,0,0,0-.86l-.63-1.25.4-.4,1.25.63a1,1,0,0,0,.86,0l.25-.1a1,1,0,0,0,.61-.63l.44-1.33h.56l.44,1.33a1,1,0,0,0,.61.63l.25.1a1,1,0,0,0,.86,0l1.25-.63.4.4-.63,1.25a1,1,0,0,0,0,.86,2.6,2.6,0,0,1,.1.25,1,1,0,0,0,.63.61l1.33.44Z"/></svg>)
       
     }
+  ],
+  projects : [
+    {
+      title : "Comprehensive Dataset Collection for Moroccan Car Information",
+      tags  : ['Web Application','Machine Learning'],
+      date : '2018',
+      fullDescription : "",
+      images : [
+        '/Images/car.png',
+
+
+      ],
+      techUsed : ['Python','PyQT','OpenCV'],
+      typeWork : 'Individual Work ' 
+    },
+    {
+      title : "Age and Gender Detection",
+      tags  : ['Web Application','Machine Learning'],
+      date : '2018',
+      fullDescription : "",
+      images : [
+        '/Images/GenderAge/sddefault.jpg',
+
+
+      ],
+      techUsed : ['Python','PyQT','OpenCV'],
+      typeWork : 'Individual Work ' 
+    },
+    {
+      title : "Simple Image Processing Desktop Application",
+      tags  : ['Desktop Application'],
+      date : '2018',
+      fullDescription : "",
+      images : [
+        '/Images/ImgProc/1.png',
+        '/Images/ImgProc/2.png',
+        '/Images/ImgProc/3.png',
+        '/Images/ImgProc/4.png',
+
+      ],
+      techUsed : ['Python','PyQT','OpenCV'],
+      typeWork : 'Individual Work ' 
+    },
+    {
+      title : "Resource Management",
+      tags  : ['Web Application'],
+      date : '2018',
+      fullDescription : "",
+      images : [
+        '/Images/no-image-available.jpg',
+      ],
+      techUsed : ['Spring Boot','Spring Security','JWT','NextJS','Scrum-wise','UML','MySQL'],
+      typeWork : 'Individual Work ' 
+    },
+    {
+      title : "E-commerce Website for Computer Equipment using JEE",
+      tags  : ['Web Application'],
+      date : '2018',
+      fullDescription : "E-commerce website is a robust platform designed for selling computer equipment. Built using Java Enterprise Edition (JEE) and MySQL, the website follows the N-Tier architecture, ensuring scalability, maintainability, and separation of concerns.The website features two distinct sides: the admin side and the user side.",
+      images : [
+        '/Images/no-image-available.jpg',
+      ],
+      techUsed : ['Java','JEE','MySql','N-tier architecture'],
+      typeWork : 'Individual Work ' 
+    },
+    {
+      title : "Resource management for a leather company",
+      tags  : ['Web Application'],
+      date : '2018',
+      fullDescription : "",
+      images : [
+        '/Images/gescom/1.png',
+        '/Images/gescom/2.png',
+        '/Images/gescom/3.png',
+        '/Images/gescom/4.png',
+        '/Images/gescom/5.png',
+      ],
+      techUsed : ['NextJS','Redux-Toolkit','TypeScript','Spring Boot','Keyclock','Next-Auth','JWT','PostgreSQL','Jira'],
+      typeWork : 'Team Work' 
+    },
+    {
+      title : ' Library Management Application with JAVA Swing',
+      tags  : ['Desktop Application'],
+      date : '2018',
+      fullDescription : " library management application developed using JAVA Swing. UML models, including class diagrams and activity diagrams..., MySQL as the database, and JDBC for database interaction. The application provides advanced features, including book return management, book search, and more.",
+      images : [
+        '/Images/swing/1.png',
+        '/Images/swing/2.png',
+        '/Images/swing/3.png',
+        '/Images/swing/4.png',
+      ],
+      techUsed : ['Java','Java Swing','UML','MySql'],
+      typeWork : 'Team Work' 
+    },
+    {
+      title : 'United States - Tourism and News Website',
+      date : '2018',
+      tags  : ['Web Application'],
+      fullDescription : 'web platform that provides detailed information about the United States as a tourist destination. With insights into diverse attractions, culture, landmarks, and more, it serves as a valuable resource for travelers. Stay updated with the latest events and developments through the dedicated news section. The admin panel ensures effortless content management, keeping tourist information current and enabling the addition of new attractions and timely news articles.',
+      images : [
+        '/Images/Blog/1.png',
+        '/Images/Blog/2.png',
+        '/Images/Blog/3.png',
+
+      ],
+      techUsed : ['HTML','CSS','JavaScript','PHP','MySql'],
+      typeWork : 'Individual Work ' 
+    },
+
   ]
 }

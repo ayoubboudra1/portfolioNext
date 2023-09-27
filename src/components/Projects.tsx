@@ -14,14 +14,16 @@ import {
   useInView,
   useScroll,
 } from 'framer-motion'
-import ProjectCard from './ProjectCard'
+import ProjectCard, { ProjectProps } from './ProjectCard'
+import { myInfo } from '@/data/myInfo'
 
 export interface ProjectsProps {
   setShowModal: (value: boolean) => void
   showModal: boolean
+  setContent : (content: ProjectProps) => void
 }
 
-function Projects({ showModal, setShowModal }: ProjectsProps) {
+function Projects({ showModal, setShowModal,setContent }: ProjectsProps) {
   return (
     <>
       <AnimatePresence mode="popLayout">
@@ -44,9 +46,13 @@ function Projects({ showModal, setShowModal }: ProjectsProps) {
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 1 }}
           >
-            <ProjectCard setShowModal={setShowModal} />
-            <ProjectCard setShowModal={setShowModal} />
-            <ProjectCard setShowModal={setShowModal} />
+            {
+              myInfo.projects.map((value,index) => <ProjectCard setShowModal={setShowModal} project={value} key={'p'+index} setContent={setContent} />)
+            }
+
+            {/* <ProjectCard setShowModal={setShowModal} img="/Images/project.png" />
+            <ProjectCard setShowModal={setShowModal} img="/Images/project.jpg" />
+            <ProjectCard setShowModal={setShowModal} img="/Images/project.png" /> */}
           </motion.div>
           <div className="">
             <Link

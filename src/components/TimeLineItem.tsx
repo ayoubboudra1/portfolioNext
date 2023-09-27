@@ -19,12 +19,13 @@ function TimeLineItem({ index, item }: TimeLineItemProps) {
 
   return (
     <>
-      <div className={index % 2 === 0 ? leftClass : rightClass}>
+      <div className={index % 2 === 0 ? leftClass : rightClass} >
         <div className="order-1 w-5/12"></div>
         <div className="order-1 w-5/12 px-1 py-4 text-right">
           <h4 className="mb-3 font-bold text-lg md:text-2xl">
             {myInfo.myExperience[index].title}
           </h4>
+          <i className=''>{myInfo.myExperience[index].location}</i>
           <p className="mb-3 font-bold text-yellow-400 ">
             {myInfo.myExperience[index].date}
           </p>

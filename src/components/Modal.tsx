@@ -1,13 +1,29 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { ProjectProps } from './ProjectCard'
+import project from '@/pages/project'
 
 export interface ModalProps {
   showModal: boolean
   setShowModal: (modalStatus: boolean) => void
+  content : ProjectProps
 }
 
-function Modal({ showModal, setShowModal }: ModalProps) {
+function Modal({ showModal, setShowModal ,content}: ModalProps) {
+  
+  const [index,setIndex]  = useState(0)
+  const handlClick = (button:string) => {
+      const length = content.images.length
+      console.log(index)
+      if(button === 'next'){
+          setIndex(prev => (prev+1)%length)
+      }
+      else{
+        setIndex(prev => (prev-1)%length)
+      }
+  }
+
   return (
     <>
       <div>
@@ -42,11 +58,12 @@ function Modal({ showModal, setShowModal }: ModalProps) {
                     <Image
                       width={1535}
                       height={733}
-                      src="/Images/project.png"
+                      src={content.images[index]}
                       alt="..."
                     />
                   </div>
                   <button
+                    onClick={()=>handlClick('previous')}
                     type="button"
                     className="mx-6 absolute top-0 left-0 z-30 flex items-center justify-center h-full  cursor-pointer group focus:outline-none"
                     data-carousel-prev
@@ -71,6 +88,7 @@ function Modal({ showModal, setShowModal }: ModalProps) {
                     {/* </span> */}
                   </button>
                   <button
+                    onClick={()=>handlClick('next')}
                     type="button"
                     className="mx-6  absolute top-0 right-0 z-30 flex items-center justify-center h-full  cursor-pointer group focus:outline-none"
                     data-carousel-next
@@ -97,21 +115,58 @@ function Modal({ showModal, setShowModal }: ModalProps) {
                 </div>
                 <div className="w-full">
                   <div className="">
-                    <h2 className="text-2xl font-bold text-center md:text-4xl my-2">
-                      Half Sleve T-shirt for Men
+                    <h2 className="text-2xl font-bold text-center md:text-4xl mt-4 mb-10">
+                      {content.title}
                     </h2>
+                    <div className='mx-12 my-5'>
+                        {
+                          content.tags.map((value,index) => 
+                            <span key={'tag'+index} className="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full ">{value}</span>
+                          )  
+                        }
+                    </div>
+                    <h5 className="text-lg font-bold mx-5 mt-2 md:text-2xl">
+                      Technologies used
+                    </h5>
+                    <div className='mx-12 my-5'>
+                    {
+                          content.techUsed.map((value,index) => 
+                            <span key={'tag'+index} className="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full ">{value}</span>
+                          )  
+                        }
+                    </div>
                     <h5 className="text-xl font-bold mx-5 mt-2 md:text-2xl">
                       Description
                     </h5>
                     <p className="text-lg font-normal mx-7 md:text-xl">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quos est magnam quibusdam maiores sit perferendis minima
-                      cupiditate iusto earum repudiandae maxime vitae nostrum,
-                      ea cumque iste ipsa hic commodi tempore.
+                      {
+                        content.fullDescription
+                      }
                     </p>
-                    <h5 className="text-lg font-bold mx-5 mt-2 md:text-2xl">
+                    <h5 className="text-lg font-bold mx-5 mt-5 md:text-2xl">
                       More Details
                     </h5>
+                    <div className="relative flex w-96 flex-col mx-10 text-gray-700">
+                        <div className="p-6">
+                          <div className="mb-2 flex items-center justify-between">
+                            <p className="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                            Project date:
+                            </p>
+                            <p className="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                              {content.date}
+                            </p>
+                          </div>
+                          <div className="mb-2 flex items-center justify-between">
+                            <p className="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                            Type Of Work:
+                            </p>
+                            <p className="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                              {content.typeWork}
+                            </p>
+                          </div>
+
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>

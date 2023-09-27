@@ -89,12 +89,12 @@ function About() {
         </div>
         <div className="">
           <Link
-            href=""
+            href="/project"
             className="flex flex-col hover:scale-105 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 m-5"
           >
             <button className=" mx-16  rounded-xl  relative h-[50px] w-56 overflow-hidden  bg-yellow-400 text-white shadow-lg">
               <span className="relative z-10  inline-flex justify-center items-center font-bold text-xl">
-                My Projects
+                Projects
                 <svg
                   aria-hidden="true"
                   className="ml-2 -mr-1 w-5 h-5"
