@@ -9,14 +9,13 @@ export const myInfo = {
   myImagePath: '/Images/profile.jpg',
   descriptionAboutMe:
     <>
-         I am a passionate individual pursuing a master&rsquo;s degree in <i className='text-yellow-400'>Data Science 
-         & Intelligent Systems</i> at the Faculty of Science and Technologies Fes. 
+    I am currently pursuing a master&rsquo;s degree in <i className='text-yellow-400'>Data Science and Intelligent Systems</i> at the Faculty of Science and Technologies Fes. 
          <br />
          <br />
-         I am a creative problem solver with strong analytical skills. I am flexible and embrace new challenges.
-         I am constantly seeking opportunities to learn and grow.
-         I have acquired valuable skills that enable me to seamlessly integrate into teams and progress
-          in my career.
+         I possess strong analytical skills and enjoy solving problems creatively. I am adaptable and open to new challenges, always seeking opportunities for personal and professional growth.
+         <br/>
+         <br></br>
+        I have developed valuable skills that allow me to work well within teams and advance in my career.
     </>,
   myExperience: [
     {
@@ -463,5 +462,6 @@ export const myInfo = {
       typeWork : 'Individual Work ' 
     },
 
-  ]
+  ],
+  footerDescription : "The website was developed using Next.js and Tailwind CSS by Ayoub Boudra. It is hosted on Vercel."
 }

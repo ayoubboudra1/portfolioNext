@@ -14,9 +14,7 @@ function Footer() {
             About this Page
           </h3>
           <h4 className="m-5 text-zinc-400">
-            This website was coded in HTML, CSS, and Javascript based on a theme
-            from Colorlib. It is hosted on a LAMP server from DigitalOcean. The
-            code can be found here.
+            {myInfo.footerDescription}
           </h4>
         </div>
         <div className=" my-5">
