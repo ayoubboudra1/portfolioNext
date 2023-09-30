@@ -15,7 +15,8 @@ function Filter({categories,setCategories}:Props) {
         'Web Application',
         'Machine Learning',
         'Computer Vision',
-        'Data Analysis'
+        'Data Analysis',
+        'Desktop Application'
     ]
         
     
@@ -40,7 +41,7 @@ function Filter({categories,setCategories}:Props) {
             className="h-4 w-4"
           >
             <path
-              stroke-linecap="round"
+              strokeLinecap="round"
               strokeLinejoin="round"
               d="M19.5 8.25l-7.5 7.5-7.5-7.5"
             />

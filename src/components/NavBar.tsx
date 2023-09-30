@@ -81,12 +81,12 @@ function NavBar() {
               <p className="">Contact</p>
               <span className="absolute -bottom-1 left-0 w-0 transition-all h-1 bg-yellow-400"></span>
             </Link>
-
+{/* 
             <Link href="">
               <button className="ml-12 mr-6   rounded-xl  relative h-[45px] w-32 overflow-hidden   bg-yellow-400 pl-3 text-white  transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:text-yellow-400  hover:before:left-0 hover:before:w-full">
                 <span className="relative z-10">Resume</span>
               </button>
-            </Link>
+            </Link> */}
           </ul>
         </div>
         <div className="menu  absolute top-3 right-3 text-white text-4xl lg:hidden ">
@@ -136,7 +136,8 @@ function NavBar() {
                         <Link className='' href="">Contact</Link>
                     </li> */}
             <li className="text-white bg-gradient-to-r from-yellow-400 via-yellow-400 to-yellow-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-yellow-400  shadow-lg shadow-yellow-400/50    my-2 p-2  drop-shadow-lg absolute bottom-28 left-10 right-10 rounded-xl">
-              <Link className="" href="">
+            <Link href='https://drive.google.com/file/d/1TE8qOyaFWF5jkBV-NS7wTse_9q1z8yCP/view?usp=sharing' target="_blank" rel="noopener noreferrer">
+
                 Resume
               </Link>
             </li>

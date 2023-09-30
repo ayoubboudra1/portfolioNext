@@ -43,7 +43,7 @@ function Modal({ showModal, setShowModal ,content}: ModalProps) {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
+                  strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
@@ -78,7 +78,7 @@ function Modal({ showModal, setShowModal ,content}: ModalProps) {
                     >
                       <path
                         stroke="currentColor"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth="2"
                         d="M5 1 1 5l4 4"
@@ -103,7 +103,7 @@ function Modal({ showModal, setShowModal ,content}: ModalProps) {
                     >
                       <path
                         stroke="currentColor"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth="2"
                         d="m1 9 4-4-4-4"

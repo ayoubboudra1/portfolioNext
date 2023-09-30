@@ -70,16 +70,25 @@ function Footer() {
           <h3 className="text-left ml-5   text-xl text-white font-bold ">
             Resume
           </h3>
-          <div className="email relative m-6 w-80 hover:scale-105 ">
-            <button className=" cursor-pointer  font-bold my-6 p-3 pl-12   w-full drop-shadow-lg  rounded-xl  relative   overflow-hidden   bg-yellow-400 px-3 text-white shadow-2xl ">
-              <span className="relative z-10">
-                <div className="absolute   ">
-
-                </div>
-                Download my Resume
-              </span>
+          <div className='flex flex-col my-6'>
+          <Link href='https://drive.google.com/file/d/1TE8qOyaFWF5jkBV-NS7wTse_9q1z8yCP/view?usp=sharing' target="_blank" rel="noopener noreferrer" className="email relative m-2 w-80 hover:scale-105 ">
+            <button className=" cursor-pointer  font-bold  p-3 pl-12    drop-shadow-lg  rounded-xl  relative   overflow-hidden   bg-yellow-400 px-3 text-white shadow-2xl ">
+              {/* <span className="relative z-10"> */}
+               Frensh Resume
+              {/* </span> */}
             </button>
+          </Link>
+          <Link href='#'  className="email relative m-2  w-80 hover:scale-105 ">
+            <button className=" cursor-pointer  font-bold  p-3 pl-12    drop-shadow-lg  rounded-xl  relative   overflow-hidden   bg-yellow-400 px-3 text-white shadow-2xl ">
+              {/* <span className="relative z-10"> */}
+               English Resume
+              {/* </span> */}
+            </button>
+          </Link>
+
+
           </div>
+
           <Link
             href="/"
             className="logo  w-full flex justify-center items-center italic lg:basis-1/3 mt-14 "

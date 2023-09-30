@@ -31,7 +31,7 @@ function ProjectDetails({content}:Props) {
                 <div className='mx-5'>
                 <button onClick={()=> router.back()} className="w-full flex items-center justify-center  px-5 py-2 text-sm text-white transition-colors duration-200  border rounded-lg gap-x-2 sm:w-auto bg-yellow-400">
                     <svg className="w-5 h-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
                     </svg>
                     <span>Go back</span>
                 </button>
@@ -70,7 +70,7 @@ function ProjectDetails({content}:Props) {
                     >
                       <path
                         stroke="currentColor"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth="2"
                         d="M5 1 1 5l4 4"
@@ -95,7 +95,7 @@ function ProjectDetails({content}:Props) {
                     >
                       <path
                         stroke="currentColor"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth="2"
                         d="m1 9 4-4-4-4"
@@ -142,6 +142,11 @@ function ProjectDetails({content}:Props) {
                         <h5 className="text-lg font-bold mx-5 mt-2 md:text-2xl w-11/12    text-gray-900">
                         More Details
                         </h5>
+                        <div className='my-3 text-lg font-normal mx-8 md:text-xl'>
+                          <p className=''>type of work : <span className='text-black'>{content.typeWork}</span></p>
+                          <p>Date : {content.date}</p>
+
+                        </div>
 
                   </div>
                  

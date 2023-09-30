@@ -5,7 +5,7 @@ export const myInfo = {
   myEmail: 'ayoub.boudra1@gmail.com',
   myPhone : '+212632697321',
   smallDescription:
-    "I am a junior Web Developer  and Data Scientist passionate about continuous learning and exploring emerging technologies.",
+    "I am a Full stack Web Developer and Data Scientist passionate about continuous learning and exploring emerging technologies.",
   myImagePath: '/Images/profile.jpg',
   descriptionAboutMe:
     <>
@@ -113,25 +113,29 @@ export const myInfo = {
       percentage: '75%',
     },
     {
-      skillName: 'Python (Data science , ML ,DeepLearning ,Data visualisation)',
+      skillName: 'Python (Data science , ML ,DeepLearning ,Data visualisation,Data Mining,Image processing)',
       percentage: '75%',
     },
     {
       skillName: 'Java/JEE/Spring Boot',
-      percentage: '90%',
+      percentage: '75%',
+    },
+    {
+      skillName: 'ReactJS,NextJS,Angulat',
+      percentage: '75%',
     },
   ],
   technicalSkillsRight: [
     {
-      skillName: 'MYSQL',
+      skillName: 'SQL (MySql , PostgreSQL)',
       percentage: '75%',
     },
     {
-      skillName: 'NOSQL(RDIS, MONGODB, CASSANDRA, HBASE & NEO4J)',
-      percentage: '75%',
+      skillName: 'NOSQL( MONGODB)',
+      percentage: '50%',
     },
     {
-      skillName: 'GIT/GITHUB & JENKINS',
+      skillName: 'GIT/GITHUB',
       percentage: '75%',
     },
     {
@@ -140,11 +144,15 @@ export const myInfo = {
     },
     {
       skillName: 'HADOOP ECOSYSTEM',
-      percentage: '75%',
+      percentage: '50%',
     },
     {
       skillName: 'BUSINESS INTELLIGENCE',
-      percentage: '90%',
+      percentage: '50%',
+    },
+    {
+      skillName: 'AgGILE METHODS (SCRUM)',
+      percentage: '50%',
     },
   ],
   languages: [
@@ -322,23 +330,23 @@ export const myInfo = {
       id:32509,
       title : "Personal Portfolio built with Next.js and Tailwind CSS",
       tags  : ['Web Application'],
-      date : '1-Sep-2023 / 1-Oct-2023',
-      fullDescription : "",
+      date : 'July-2023',
+      fullDescription : "The website was developed using Next.js and Tailwind CSS by Ayoub Boudra. It is hosted on Vercel.",
       images : [
         '/Images/portfolio/1.png',
         '/Images/portfolio/2.png',
         '/Images/portfolio/3.png',
     
       ],
-      techUsed : ['Nextjs','TypeScript','Prisma','NextAuth','Redux-Toolkit'],
+      techUsed : ['Nextjs','TypeScript',],
       typeWork : 'Individual Work ' 
     },
     {
       id:43209,
-      title : "Comprehensive Dataset Collection for Moroccan Car Information",
-      tags  : ['Machine Learning'],
+      title : "Exploring Car Price Data in Morocco: Collection and Cleaning",
+      tags  : ['Machine Learning','Data Analysis'],
       date : 'June-2023',
-      fullDescription : "",
+      fullDescription : "Car Price Prediction: Collecting car data from multiple sources, cleaning and visualizing a dataset of around 10,000 samples, and utilizing a decision tree algorithm to create a model for predicting car prices.",
       images : [
         '/Images/car.png',
 
@@ -350,9 +358,9 @@ export const myInfo = {
     {
       id:0,
       title : "Clustering for Effective Customer Segmentation and Dataset Analysis",
-      tags  : ['Machine Learning'],
+      tags  : ['Machine Learning','Data Analysis'],
       date : 'June-2023',
-      fullDescription : "",
+      fullDescription : "In this project, I began by working with a customer selling dataset. After cleaning the data, my focus shifted towards clustering the clients using various clustering algorithms. The goal was to group similar clients together based on their purchasing patterns and behaviors. By applying these clustering techniques, I aimed to uncover hidden information and gain insights into customer segmentation and preferences within the dataset. This analysis provides valuable knowledge that can be utilized for targeted marketing strategies and personalized customer experiences.",
       images : [
         '/Images/customerSegmentation.jpg',
 
@@ -363,16 +371,18 @@ export const myInfo = {
     },
     {
       id:1,
-      title : "Age and Gender Detection",
+      title : "Facial-Based Age and Gender Detection",
       tags  : ['Machine Learning'],
       date : 'April-2023',
-      fullDescription : "",
+      fullDescription : "This project involved collecting and cleaning a dataset of over 25,000 facial images. We conducted experiments with different models to achieve optimal results for facial analysis tasks such as age and gender detection. Finally, we successfully implemented the chosen model into a web application for practical usage.",
       images : [
         '/Images/GenderAge/sddefault.jpg',
+        '/Images/GenderAge/2.png',
+        '/Images/GenderAge/3.png',
 
 
       ],
-      techUsed : ['Python','PyQT','OpenCV'],
+      techUsed : ['Python','Scikit-learn','OpenCV','Numpy'],
       typeWork : 'Team Work' 
     },
     {
@@ -380,7 +390,7 @@ export const myInfo = {
       title : "Simple Image Processing Desktop Application",
       tags  : ['Desktop Application','Computer Vision'],
       date : 'April-2022',
-      fullDescription : "",
+      fullDescription : "This desktop application is specifically designed for image processing tasks, allowing users to apply various filters and perform basic editing operations such as rotation, cropping, and selection. It was developed using pyQT, a Python framework for creating graphical user interfaces, and leverages the powerful filtering functions provided by OpenCV. With this application, users can enhance and manipulate images by applying a wide range of filters available in OpenCV, resulting in visually appealing and customized outputs.",
       images : [
         '/Images/ImgProc/1.png',
         '/Images/ImgProc/2.png',
@@ -396,7 +406,7 @@ export const myInfo = {
       title : "Resource Management",
       tags  : ['Web Application'],
       date : 'April-2022',
-      fullDescription : "",
+      fullDescription : "This website, developed using Next.js and Spring Boot, is designed for efficient management of stock, orders, suppliers, and repair requests. The development process involved utilizing UML diagrams for the initial design and adopting Scrumwise for effective team management. The website serves as a comprehensive solution, providing capabilities to track and manage inventory, process orders, handle supplier relationships, and efficiently manage repair requests.",
       images : [
         '/Images/no-image-available.jpg',
       ],
@@ -408,7 +418,7 @@ export const myInfo = {
       title : "E-commerce Website for Computer Equipment using JEE",
       tags  : ['Web Application'],
       date : 'Dec-2021',
-      fullDescription : "E-commerce website is a robust platform designed for selling computer equipment. Built using Java Enterprise Edition (JEE) and MySQL, the website follows the N-Tier architecture, ensuring scalability, maintainability, and separation of concerns.The website features two distinct sides: the admin side and the user side.",
+      fullDescription : "This e-commerce website, built using Java Enterprise Edition (JEE), serves as an online platform for selling computer machines. In addition to the customer-facing frontend, it includes an administrative section. The admin side allows authorized users to efficiently manage orders and products. This feature empowers administrators to handle order processing, inventory management, and product updates, ensuring smooth operations of the e-commerce business.",
       images : [
         '/Images/no-image-available.jpg',
       ],
@@ -419,8 +429,8 @@ export const myInfo = {
       id:6,
       title : "Resource management for a leather company",
       tags  : ['Web Application'],
-      date : '1-May-2021/1-July-2021',
-      fullDescription : "",
+      date : '1-May-2021/30-Juin-2021',
+      fullDescription : "A compact application built with Next.js, Spring Boot, and other technologies specifically designed for an international leather company. It effectively manages stock, client transactions, orders, suppliers, and other essential operations.",
       images : [
         '/Images/gescom/1.png',
         '/Images/gescom/2.png',
