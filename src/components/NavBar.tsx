@@ -7,6 +7,7 @@ import { useRouter } from 'next/router'
 function NavBar() {
   const [showNav, setShowNav] = useState(false)
   const router = useRouter()
+  var regex = new RegExp("^/project");
 
   return (
     <>
@@ -50,7 +51,7 @@ function NavBar() {
             <Link
               href="/project"
               className={
-                router.pathname === '/project'
+                regex.test(router.pathname)
                   ? 'font-bold text-xl m-2 p-2 relative w-max two'
                   : 'font-bold text-xl m-2 p-2 relative w-max one'
               }

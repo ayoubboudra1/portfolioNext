@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { ProjectProps } from './ProjectCard'
-import project from '@/pages/project'
+
 
 export interface ModalProps {
   showModal: boolean
@@ -26,16 +26,16 @@ function Modal({ showModal, setShowModal ,content}: ModalProps) {
 
   return (
     <>
-      <div>
-        <div>
-          <div className="flex fixed inset-0 z-[99] w-screen h-screen bg-white">
+      <div >
+        <div className=' '>
+          <div className="flex fixed inset-0 z-[99] w-screen   bg-gray-50">
             <button
               type="button"
               className="absolute top-0 right-0 z-30 flex items-center justify-center px-2 py-2 mt-5 mr-5 space-x-1 text-xs font-medium uppercase border rounded-md border-neutral-200 lg:border-white/20 lg:bg-black/10 hover:lg:bg-black/30 text-neutral-600 lg:text-white hover:bg-neutral-100"
               onClick={() => setShowModal(false)}
             >
               <svg
-                className="w-3 h-3"
+                className="w-3 h-3 "
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -44,8 +44,8 @@ function Modal({ showModal, setShowModal ,content}: ModalProps) {
                 <path
                   stroke="currentColor"
                   stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
                 />
               </svg>
@@ -70,7 +70,7 @@ function Modal({ showModal, setShowModal ,content}: ModalProps) {
                   >
                     {/* <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> */}
                     <svg
-                      className="w-8 h-8 text-white dark:text-gray-800"
+                      className="w-8 h-8 text-yellow-400 hover:text-yellow-500"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -79,8 +79,8 @@ function Modal({ showModal, setShowModal ,content}: ModalProps) {
                       <path
                         stroke="currentColor"
                         stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M5 1 1 5l4 4"
                       />
                     </svg>
@@ -95,7 +95,7 @@ function Modal({ showModal, setShowModal ,content}: ModalProps) {
                   >
                     {/* <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> */}
                     <svg
-                      className="w-8 h-8 text-white dark:text-gray-800"
+                      className="w-8 h-8 text-yellow-400 hover:text-yellow-500"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -104,8 +104,8 @@ function Modal({ showModal, setShowModal ,content}: ModalProps) {
                       <path
                         stroke="currentColor"
                         stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="m1 9 4-4-4-4"
                       />
                     </svg>
@@ -114,14 +114,18 @@ function Modal({ showModal, setShowModal ,content}: ModalProps) {
                   </button>
                 </div>
                 <div className="w-full">
-                  <div className="">
-                    <h2 className="text-2xl font-bold text-center md:text-4xl mt-4 mb-10">
+                  <h2 className="text-2xl font-bold text-center md:text-4xl mt-4 mb-10 ">
                       {content.title}
                     </h2>
+                  <div className="">
+                    
+                    <h5 className="text-lg font-bold mx-5 mt-2 md:text-2xl">
+                      Categories
+                    </h5>
                     <div className='mx-12 my-5'>
                         {
                           content.tags.map((value,index) => 
-                            <span key={'tag'+index} className="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full ">{value}</span>
+                            <span key={'tag'+index} className="bg-yellow-400 hover:bg-yellow-500 text-white text-sm font-medium mr-2 px-3 py-1 rounded-full cursor-pointer">{value}</span>
                           )  
                         }
                     </div>
@@ -131,7 +135,7 @@ function Modal({ showModal, setShowModal ,content}: ModalProps) {
                     <div className='mx-12 my-5'>
                     {
                           content.techUsed.map((value,index) => 
-                            <span key={'tag'+index} className="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full ">{value}</span>
+                            <span key={'tag'+index} className="bg-yellow-400 hover:bg-yellow-500 text-white text-sm font-medium mr-2 px-3 py-1 rounded-full cursor-pointer">{value}</span>
                           )  
                         }
                     </div>
@@ -146,8 +150,8 @@ function Modal({ showModal, setShowModal ,content}: ModalProps) {
                     <h5 className="text-lg font-bold mx-5 mt-5 md:text-2xl">
                       More Details
                     </h5>
-                    <div className="relative flex w-96 flex-col mx-10 text-gray-700">
-                        <div className="p-6">
+                    <div className="relative flex w-96 flex-col ml-10 text-gray-700">
+                        <div className="">
                           <div className="mb-2 flex items-center justify-between">
                             <p className="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
                             Project date:

@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 import Modal from './Modal'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export type ProjectProps ={
+    id : number
    title: string
    tags : string[]
    date : string
@@ -19,7 +22,8 @@ export const project0:ProjectProps = {
   images: [],
   date: '',
   techUsed: [],
-  typeWork: ''
+  typeWork: '',
+  id: 0
 }
 
 
@@ -33,12 +37,13 @@ export const project0:ProjectProps = {
 //       ],
 
 export interface ProjectCardProps {
-  setShowModal: (value: boolean) => void
+
   project : ProjectProps
-  setContent : (content: ProjectProps) => void
+
 }
 
-function ProjectCard({ setShowModal,project,setContent }: ProjectCardProps) {
+function ProjectCard({ project }: ProjectCardProps) {
+  const route = useRouter()
   return (
     <>
       <div className="flex   items-center justify-center my-10 px-4 hover:scale-105">
@@ -66,7 +71,7 @@ function ProjectCard({ setShowModal,project,setContent }: ProjectCardProps) {
             </p>
             <button
               className="w-full rounded-md   py-2 text-white  bg-yellow-400  shadow-lg   "
-              onClick={() => {setShowModal(true);setContent(project)}}
+              onClick={()=> route.push(`/project/${project.id}`)}
             >
               See More
             </button>

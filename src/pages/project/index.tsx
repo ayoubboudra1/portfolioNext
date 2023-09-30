@@ -42,9 +42,7 @@ function ProjectPage(props: IndexPageProps, ref: IndexPageRef) {
 
   return (
     <>
-      {showModal ? (
-        <Modal showModal={showModal} setShowModal={setShowModal} content={content} />
-      ) : null}
+
       <NavBar />
       <div className={isVisible ? visibleClassName : disapearClassName}>
         <SocialMedia blocStyle="icons w-full flex-row flex lg:flex-col text-3xl gap-4 my-4 justify-center items-center text-white " />
@@ -56,7 +54,7 @@ function ProjectPage(props: IndexPageProps, ref: IndexPageRef) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className="w-full ">
+        <main className="w-screen ">
           <div className="page absolute">
             <div className="body mt-16" id="home">
               <div className="">

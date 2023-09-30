@@ -36,7 +36,7 @@ export const myInfo = {
     {
       title: 'Internship as a Full-stack Web Developer.',
       location : 'INNOV-DS',
-      date: 'April-June, 2022',
+      date: '1-April-2021, 1-July-2021',
       description:
         'I gained valuable skills in Next.js, TypeScript, Tailwind CSS, and Java Spring Boot. I also learned how to effectively manage teamwork using Scrum methodologies and work with RESTful APIs.',
     },
@@ -47,12 +47,18 @@ export const myInfo = {
       description:
         "provides a strong foundation in essential aspects of data science and artificial intelligence. It covers topics like machine learning, knowledge engineering, and analyzing large datasets. The program also includes modules focused on development, offering practical skills in software development.",
     },
+    {
+      title: "Freelance as JavaScript Full-stack Web Developer.",
+      location : '',
+      date: '1-Sep-2021, 1-Oct-2023',
+      description:
+        "Converted a web application developed in Laravel to a new version built exclusively with Next.js, encompassing both the frontend and backend development. Leveraged Prisma to enhance the backend functionality.",
+    },
   ],
   areasOfInterst: [
     {
       title: 'Web Development',
-      description:
-      "Experienced in developing secure, dynamic, and responsive web applications using ReactJS, Angular, TypeScript, Tailwind CSS, and Java.",
+      description:"I am passionate about web development because of its dynamic nature and the ability to bring ideas to life online. The evolving web technologies and the potential to create engaging user experiences greatly interest me.",
       icon: (
           <svg 
               xmlns="http://www.w3.org/2000/svg" 
@@ -66,12 +72,25 @@ export const myInfo = {
     {
       title: 'Data Science',
       description:
-       "Experienced in data science using Python, SQL, and machine learning algorithms. Proficient in data analysis, statistical modeling, and visualization for actionable insights from complex datasets.",
+       "I am passionate about data science due to its dynamic nature and its ability to unlock valuable insights from vast amounts of data. The evolving field of data science and the potential to extract meaningful information greatly intrigue me.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
         fill="currentColor"
         viewBox="0 0 20 20">
           <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
+        </svg>
+      ),
+    },
+    {
+      title: 'Artificial Intelligence',
+      description:
+       "I am passionate about artificial intelligence (AI) due to its dynamic nature and its ability to revolutionize various industries. The evolving field of AI and its potential to tackle complex problems and drive innovation greatly intrigue me.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" 
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer">
+          <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
         </svg>
       ),
     },
@@ -268,7 +287,7 @@ export const myInfo = {
     },
     {
       name : 'Problem-solving',
-      icon : (<svg className='hover:scale-105 cursor-pointer' width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none"><line x1="50.4" y1="24.38" x2="58.3" y2="23.14"/><line x1="47.93" y1="17.11" x2="52.87" y2="14.2"/><line x1="42.89" y1="11.73" x2="46.21" y2="4.51"/><line x1="33.45" y1="10.69" x2="33.41" y2="4.96"/><line x1="24.29" y1="12.09" x2="21.62" y2="4.51"/><line x1="17.99" y1="17.03" x2="12.96" y2="14.29"/><line x1="15.78" y1="23.97" x2="8.03" y2="22.66"/><path d="M26.22,45.47c0-5.16-3.19-9.49-4.91-12.69A12.24,12.24,0,0,1,19.85,27c0-6.79,6.21-12.3,13-12.3"/><path d="M39.48,45.47c0-5.16,3.19-9.49,4.91-12.69A12.24,12.24,0,0,0,45.85,27c0-6.79-6.21-12.3-13-12.3"/><rect x="23.63" y="45.19" width="18.93" height="4.25" rx="2.12"/><rect x="24.79" y="49.43" width="16.61" height="4.25" rx="2.12"/><path d="M36.32,53.68v.84a3.23,3.23,0,1,1-6.44,0v-.84"/><path d="M24.57,26.25a7.5,7.5,0,0,1,7.88-7.11"/></svg>)
+      icon : (<svg className='hover:scale-105 cursor-pointer' width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" strokeWidth="3" stroke="#000000" fill="none"><line x1="50.4" y1="24.38" x2="58.3" y2="23.14"/><line x1="47.93" y1="17.11" x2="52.87" y2="14.2"/><line x1="42.89" y1="11.73" x2="46.21" y2="4.51"/><line x1="33.45" y1="10.69" x2="33.41" y2="4.96"/><line x1="24.29" y1="12.09" x2="21.62" y2="4.51"/><line x1="17.99" y1="17.03" x2="12.96" y2="14.29"/><line x1="15.78" y1="23.97" x2="8.03" y2="22.66"/><path d="M26.22,45.47c0-5.16-3.19-9.49-4.91-12.69A12.24,12.24,0,0,1,19.85,27c0-6.79,6.21-12.3,13-12.3"/><path d="M39.48,45.47c0-5.16,3.19-9.49,4.91-12.69A12.24,12.24,0,0,0,45.85,27c0-6.79-6.21-12.3-13-12.3"/><rect x="23.63" y="45.19" width="18.93" height="4.25" rx="2.12"/><rect x="24.79" y="49.43" width="16.61" height="4.25" rx="2.12"/><path d="M36.32,53.68v.84a3.23,3.23,0,1,1-6.44,0v-.84"/><path d="M24.57,26.25a7.5,7.5,0,0,1,7.88-7.11"/></svg>)
       
     },
     {
@@ -286,12 +305,42 @@ export const myInfo = {
   ],
   projects : [
     {
+      id:59634,
+      title : "Migrating a Laravel-based Gestion Syndic Application to Next.js",
+      tags  : ['Web Application'],
+      date : '1-Sep-2023 / 1-Oct-2023',
+      fullDescription : "I successfully migrated an application from Laravel to Next.js, leveraging Next.js as the comprehensive framework for front-end and back-end development. To ensure a secure connection with a PostgreSQL database, I seamlessly integrated Prisma. Furthermore, I implemented authentication using NextAuth.js, along with incorporating additional Node.js libraries to enhance various functionalities within the application. This migration not only streamlined the development process but also fortified the application's security and expanded its capabilities through the integration of various powerful libraries.",
+      images : [
+        '/Images/gsyndic/1.png',
+        '/Images/gsyndic/2.png',
+        '/Images/gsyndic/3.png',
+        '/Images/gsyndic/4.png',
+      ],
+      techUsed : ['Nextjs','TypeScript','Prisma','NextAuth','Redux-Toolkit'],
+      typeWork : 'Individual Work ' 
+    },
+    {
+      id:43209,
       title : "Comprehensive Dataset Collection for Moroccan Car Information",
-      tags  : ['Web Application','Machine Learning'],
-      date : '2018',
+      tags  : ['Machine Learning'],
+      date : 'June-2023',
       fullDescription : "",
       images : [
         '/Images/car.png',
+
+
+      ],
+      techUsed : ['Python','BeautifulSoup','Google Colab','Pandas','Matplotlib','Skitlearn'],
+      typeWork : 'Individual Work ' 
+    },
+    {
+      id:0,
+      title : "Clustering for Effective Customer Segmentation and Dataset Analysis",
+      tags  : ['Machine Learning'],
+      date : 'June-2023',
+      fullDescription : "",
+      images : [
+        '/Images/customerSegmentation.jpg',
 
 
       ],
@@ -299,9 +348,10 @@ export const myInfo = {
       typeWork : 'Individual Work ' 
     },
     {
+      id:1,
       title : "Age and Gender Detection",
-      tags  : ['Web Application','Machine Learning'],
-      date : '2018',
+      tags  : ['Machine Learning'],
+      date : 'April-2023',
       fullDescription : "",
       images : [
         '/Images/GenderAge/sddefault.jpg',
@@ -309,12 +359,13 @@ export const myInfo = {
 
       ],
       techUsed : ['Python','PyQT','OpenCV'],
-      typeWork : 'Individual Work ' 
+      typeWork : 'Team Work' 
     },
     {
+      id:3,
       title : "Simple Image Processing Desktop Application",
-      tags  : ['Desktop Application'],
-      date : '2018',
+      tags  : ['Desktop Application','Computer Vision'],
+      date : 'April-2022',
       fullDescription : "",
       images : [
         '/Images/ImgProc/1.png',
@@ -324,23 +375,25 @@ export const myInfo = {
 
       ],
       techUsed : ['Python','PyQT','OpenCV'],
-      typeWork : 'Individual Work ' 
+      typeWork : 'Team Work ' 
     },
     {
+      id:4,
       title : "Resource Management",
       tags  : ['Web Application'],
-      date : '2018',
+      date : 'April-2022',
       fullDescription : "",
       images : [
         '/Images/no-image-available.jpg',
       ],
       techUsed : ['Spring Boot','Spring Security','JWT','NextJS','Scrum-wise','UML','MySQL'],
-      typeWork : 'Individual Work ' 
+      typeWork : 'Team Work' 
     },
     {
+      id:5,
       title : "E-commerce Website for Computer Equipment using JEE",
       tags  : ['Web Application'],
-      date : '2018',
+      date : 'Dec-2021',
       fullDescription : "E-commerce website is a robust platform designed for selling computer equipment. Built using Java Enterprise Edition (JEE) and MySQL, the website follows the N-Tier architecture, ensuring scalability, maintainability, and separation of concerns.The website features two distinct sides: the admin side and the user side.",
       images : [
         '/Images/no-image-available.jpg',
@@ -349,9 +402,10 @@ export const myInfo = {
       typeWork : 'Individual Work ' 
     },
     {
+      id:6,
       title : "Resource management for a leather company",
       tags  : ['Web Application'],
-      date : '2018',
+      date : '1-May-2021/1-July-2021',
       fullDescription : "",
       images : [
         '/Images/gescom/1.png',
@@ -364,9 +418,10 @@ export const myInfo = {
       typeWork : 'Team Work' 
     },
     {
+      id:7,
       title : ' Library Management Application with JAVA Swing',
       tags  : ['Desktop Application'],
-      date : '2018',
+      date : 'Mars-2021',
       fullDescription : " library management application developed using JAVA Swing. UML models, including class diagrams and activity diagrams..., MySQL as the database, and JDBC for database interaction. The application provides advanced features, including book return management, book search, and more.",
       images : [
         '/Images/swing/1.png',
@@ -378,8 +433,9 @@ export const myInfo = {
       typeWork : 'Team Work' 
     },
     {
+      id:8,
       title : 'United States - Tourism and News Website',
-      date : '2018',
+      date : 'Dec-2020',
       tags  : ['Web Application'],
       fullDescription : 'web platform that provides detailed information about the United States as a tourist destination. With insights into diverse attractions, culture, landmarks, and more, it serves as a valuable resource for travelers. Stay updated with the latest events and developments through the dedicated news section. The admin panel ensures effortless content management, keeping tourist information current and enabling the addition of new attractions and timely news articles.',
       images : [

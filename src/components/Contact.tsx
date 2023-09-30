@@ -93,7 +93,7 @@ function Contact() {
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 0.75 }}
           >
-            Send me a message!
+            Get in touch!
           </motion.h1>
         </div>
         <div className="flex justify-center" 

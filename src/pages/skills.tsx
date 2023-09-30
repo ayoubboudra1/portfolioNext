@@ -19,11 +19,13 @@ function SkillsPage(props: IndexPageProps, ref: IndexPageRef) {
   const disapearClassName =
     'hidden drop-shadow-xl lg:block socialmedia-links fixed top-80 lg:w-12 lg:h-56 bg-black rounded-r-xl z-50 transition-opacity ease-in duration-700 opacity-0'
 
+    console.log(height)
   const listenToScroll = () => {
-    let heightToHideFrom = 454
+    let heightToHideFrom = 622
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop
     setHeight(winScroll)
+
 
     if (winScroll > heightToHideFrom) {
       isVisible && setIsVisible(false)

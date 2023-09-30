@@ -24,7 +24,7 @@ function Footer() {
             Get in touch
           </h3>
           <div className="socialmedia ">
-            <SocialMedia blocStyle="icons w-full  flex flex-row text-3xl gap-4 m-6 justify-left  items-center  text-white " />
+            <SocialMedia blocStyle="icons md:w-full  flex flex-row text-3xl gap-4 m-6 justify-left  items-center  text-white " />
           </div>
           <div className="ml-4 mr-5">
             <label
@@ -76,13 +76,7 @@ function Footer() {
             <button className=" cursor-pointer  font-bold my-6 p-3 pl-12   w-full drop-shadow-lg  rounded-xl  relative   overflow-hidden   bg-yellow-400 px-3 text-white shadow-2xl ">
               <span className="relative z-10">
                 <div className="absolute   ">
-                  <svg
-                    className="fill-current w-6 h-6  "
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-                  </svg>
+
                 </div>
                 Download my Resume
               </span>

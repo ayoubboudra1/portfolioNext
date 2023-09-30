@@ -66,7 +66,8 @@ function About() {
           >
             <div className="text-center">
               <h1 className="my-10 text-4xl italic  font-extrabold tracking-tight leading-none  md:text-5xl  ">
-                My Experience!
+                Education & Professional <br/>
+                 Experience!
               </h1>
             </div>
             <TimeLine />
