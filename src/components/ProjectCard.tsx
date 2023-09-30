@@ -69,10 +69,18 @@ function ProjectCard({ project }: ProjectCardProps) {
             <p className="text-medium mb-5 text-gray-700 truncate">
               {project.fullDescription}
             </p>
+            {/* <div className='my-2'>
+                  {
+                    project.techUsed.map((value,index) => 
+                      <i key={'tag'+index} className="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full ">{value}</i>
+                    )  
+                  }
+            </div> */}
             <button
               className="w-full rounded-md   py-2 text-white  bg-yellow-400  shadow-lg   "
               onClick={()=> route.push(`/project/${project.id}`)}
             >
+
               See More
             </button>
           </div>

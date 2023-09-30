@@ -9,7 +9,7 @@ export const myInfo = {
   myImagePath: '/Images/profile.jpg',
   descriptionAboutMe:
     <>
-         I am a passionate individual pursuing a master's degree in <i className='text-yellow-400'>Data Science 
+         I am a passionate individual pursuing a master&rsquo;s degree in <i className='text-yellow-400'>Data Science 
          & Intelligent Systems</i> at the Faculty of Science and Technologies Fes. 
          <br />
          <br />
@@ -315,6 +315,21 @@ export const myInfo = {
         '/Images/gsyndic/2.png',
         '/Images/gsyndic/3.png',
         '/Images/gsyndic/4.png',
+      ],
+      techUsed : ['Nextjs','TypeScript','Prisma','NextAuth','Redux-Toolkit'],
+      typeWork : 'Individual Work ' 
+    },
+    {
+      id:32509,
+      title : "Personal Portfolio built with Next.js and Tailwind CSS",
+      tags  : ['Web Application'],
+      date : '1-Sep-2023 / 1-Oct-2023',
+      fullDescription : "",
+      images : [
+        '/Images/portfolio/1.png',
+        '/Images/portfolio/2.png',
+        '/Images/portfolio/3.png',
+    
       ],
       techUsed : ['Nextjs','TypeScript','Prisma','NextAuth','Redux-Toolkit'],
       typeWork : 'Individual Work ' 

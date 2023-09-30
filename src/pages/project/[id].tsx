@@ -11,7 +11,7 @@ import React, { useState,useEffect } from 'react'
 
 type IndexPageProps = {}
 type IndexPageRef = React.ForwardedRef<HTMLDivElement>
-function projectDetails(props: IndexPageProps, ref: IndexPageRef) {
+function ProjectDetailsById(props: IndexPageProps, ref: IndexPageRef) {
 
     const router = useRouter()
     const {id} = router.query
@@ -70,4 +70,4 @@ function projectDetails(props: IndexPageProps, ref: IndexPageRef) {
   )
 }
 
-export default projectDetails
+export default ProjectDetailsById
