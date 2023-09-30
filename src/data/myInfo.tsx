@@ -131,11 +131,11 @@ export const myInfo = {
       percentage: '75%',
     },
     {
-      skillName: 'NOSQL( MONGODB)',
+      skillName: 'NoSQL( MONGODB)',
       percentage: '50%',
     },
     {
-      skillName: 'GIT/GITHUB',
+      skillName: 'Git/GitHub',
       percentage: '75%',
     },
     {
@@ -147,11 +147,11 @@ export const myInfo = {
       percentage: '50%',
     },
     {
-      skillName: 'BUSINESS INTELLIGENCE',
+      skillName: 'Business Intelligence',
       percentage: '50%',
     },
     {
-      skillName: 'AgGILE METHODS (SCRUM)',
+      skillName: 'Agile Methods (SCRUM)',
       percentage: '50%',
     },
   ],
@@ -200,7 +200,7 @@ export const myInfo = {
       ),
     },
     {
-      name: 'Frensh',
+      name: 'French',
       icon: (
         <Image
           className="hover:scale-105 cursor-pointer"
@@ -315,7 +315,7 @@ export const myInfo = {
       id:59634,
       title : "Migrating a Laravel-based Gestion Syndic Application to Next.js",
       tags  : ['Web Application'],
-      date : '1-Sep-2023 / 1-Oct-2023',
+      date : 'Sep-2023 ',
       fullDescription : "I successfully migrated an application from Laravel to Next.js, leveraging Next.js as the comprehensive framework for front-end and back-end development. To ensure a secure connection with a PostgreSQL database, I seamlessly integrated Prisma. Furthermore, I implemented authentication using NextAuth.js, along with incorporating additional Node.js libraries to enhance various functionalities within the application. This migration not only streamlined the development process but also fortified the application's security and expanded its capabilities through the integration of various powerful libraries.",
       images : [
         '/Images/gsyndic/1.png',
@@ -426,10 +426,25 @@ export const myInfo = {
       typeWork : 'Individual Work ' 
     },
     {
+      id:98765,
+      title : "Weather Application with Angular and Weather API",
+      tags  : ['Web Application'],
+      date : 'July-2021',
+      fullDescription : "The Weather Application is a responsive Angular application that allows users to search for a city and retrieve the current weather information for that location. Powered by a free weather API's RESTful interface, the application seamlessly integrates with the API to fetch real-time weather data. Users can simply enter the desired city name in the search bar, and the application dynamically displays the current weather conditions, including temperature, humidity, wind speed, and more. With its user-friendly interface and reliable data source, the Weather Application provides an intuitive way to stay updated on the weather conditions of any desired city.",
+      images : [
+        '/Images/weather/1.png',
+        '/Images/weather/2.png',
+        '/Images/weather/3.png',
+
+      ],
+      techUsed : ['Java','JEE','MySql','N-tier architecture'],
+      typeWork : 'Individual Work ' 
+    },
+    {
       id:6,
       title : "Resource management for a leather company",
       tags  : ['Web Application'],
-      date : '1-May-2021/30-Juin-2021',
+      date : 'May-2021 -- Juin-2021',
       fullDescription : "A compact application built with Next.js, Spring Boot, and other technologies specifically designed for an international leather company. It effectively manages stock, client transactions, orders, suppliers, and other essential operations.",
       images : [
         '/Images/gescom/1.png',
