@@ -71,14 +71,14 @@ function Footer() {
             Resume
           </h3>
           <div className='flex flex-col my-6'>
-          <Link href='https://drive.google.com/file/d/1TE8qOyaFWF5jkBV-NS7wTse_9q1z8yCP/view?usp=sharing' target="_blank" rel="noopener noreferrer" className="email relative m-2 w-80 hover:scale-105 ">
+          <Link href='https://drive.google.com/file/d/1rM2GIJWMOElGeJdQu2K6nDZi79fYkAZ8/view?usp=sharing' target="_blank" rel="noopener noreferrer" className="email relative m-2 w-80 hover:scale-105 ">
             <button className=" cursor-pointer  font-bold  p-3 pl-12    drop-shadow-lg  rounded-xl  relative   overflow-hidden   bg-yellow-400 px-3 text-white shadow-2xl ">
               {/* <span className="relative z-10"> */}
-               Frensh Resume
+               French Resume
               {/* </span> */}
             </button>
           </Link>
-          <Link href='#'  className="email relative m-2  w-80 hover:scale-105 ">
+          <Link href='https://drive.google.com/file/d/1KhlwMy4t1G11iZw7s9oYNBAvDlsLQFuW/view?usp=sharing' target="_blank" rel="noopener noreferrer"  className="email relative m-2  w-80 hover:scale-105 ">
             <button className=" cursor-pointer  font-bold  p-3 pl-12    drop-shadow-lg  rounded-xl  relative   overflow-hidden   bg-yellow-400 px-3 text-white shadow-2xl ">
               {/* <span className="relative z-10"> */}
                English Resume
