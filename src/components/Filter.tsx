@@ -9,6 +9,9 @@ type Props = {
 
 function Filter({categories,setCategories}:Props) {
 
+
+    const classNotSelected = "cursor-pointer bg-gray-400 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-gray-400 md:p-0 rounded focus:outline-none"
+    const classSelected = "cursor-pointer bg-yellow-400 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-yellow-400 md:p-0 rounded focus:outline-none"
     
     const listCategories = [
         'All',
@@ -23,7 +26,7 @@ function Filter({categories,setCategories}:Props) {
 
   return (
     <>
-<div className="flex gap-8">
+    <div className="flex gap-8  md:hidden">
   <div className="relative">
     <details className="group [&_summary::-webkit-details-marker]:hidden">
       <summary
@@ -83,6 +86,21 @@ function Filter({categories,setCategories}:Props) {
     </details>
   </div>
 </div>
+
+    <nav className="border-gray-200 hidden md:block">
+    <div className="container mx-auto flex flex-wrap items-center justify-between">
+        <div className="hidden md:block w-full md:w-auto" id="mobile-menu">
+        <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
+
+            {
+                listCategories.map((item,index)=><li key={item}>
+                    <p className={categories === item ? classSelected : classNotSelected} onClick={()=> setCategories(item)}>{item}</p>
+                  </li>)
+            }
+        </ul>
+        </div>
+    </div>
+    </nav>
 
     </>
   )

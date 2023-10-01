@@ -372,7 +372,7 @@ export const myInfo = {
     {
       id:1,
       title : "Facial-Based Age and Gender Detection",
-      tags  : ['Machine Learning'],
+      tags  : ['Machine Learning','Computer Vision'],
       date : 'April-2023',
       fullDescription : "This project involved collecting and cleaning a dataset of over 25,000 facial images. We conducted experiments with different models to achieve optimal results for facial analysis tasks such as age and gender detection. Finally, we successfully implemented the chosen model into a web application for practical usage.",
       images : [
