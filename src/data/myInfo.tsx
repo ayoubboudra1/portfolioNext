@@ -101,11 +101,11 @@ export const myInfo = {
       percentage: '75%',
     },
     {
-      skillName: 'Bootstrap ,TailwindCss',
+      skillName: 'Bootstrap, TailwindCss',
       percentage: '75%',
     },
     {
-      skillName: 'JavaScript , TypeScript',
+      skillName: 'JavaScript, TypeScript',
       percentage: '75%',
     },
     {
@@ -121,9 +121,13 @@ export const myInfo = {
       percentage: '75%',
     },
     {
-      skillName: 'ReactJS,NextJS,Angulat',
+      skillName: 'ReactJS, NextJS, Angular',
       percentage: '75%',
     },
+    {
+      skillName: 'Docker, Jenkins',
+      percentage: '50%',
+    }
   ],
   technicalSkillsRight: [
     {
@@ -154,6 +158,10 @@ export const myInfo = {
       skillName: 'Agile Methods (SCRUM)',
       percentage: '50%',
     },
+    {
+      skillName: 'JUnit, Mockito',
+      percentage: '50%',
+    }
   ],
   languages: [
     {
