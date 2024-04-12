@@ -52,11 +52,10 @@ function Home() {
                       Get started
                       <svg aria-hidden="true" className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                   </a> */}
-            <Link href="/about">
+            {/* <Link href="#about">
               <button className="mx-16  rounded-xl  relative h-[50px] w-44 overflow-hidden   bg-yellow-400 px-3 text-white shadow-lg hover:scale-105">
                 <span className="relative z-10  inline-flex justify-center items-center font-bold text-xl">
                   About 
-                  {/* ME */}
                   <svg
                     aria-hidden="true"
                     className="ml-2 -mr-1 w-5 h-5"
@@ -72,7 +71,7 @@ function Home() {
                   </svg>
                 </span>
               </button>
-            </Link>
+            </Link> */}
           </motion.div>
         </AnimatePresence>
       </div>

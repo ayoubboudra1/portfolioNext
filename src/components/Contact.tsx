@@ -82,7 +82,7 @@ function Contact() {
   // }
 
   return (
-    <div className="bg-zinc-50" id="Contact">
+    <div className="bg-zinc-50 mb-10" id="Contact">
       <AnimatePresence mode="popLayout">
         <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:pt-10 lg:pb-5 ">
           <motion.h1

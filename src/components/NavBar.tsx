@@ -37,7 +37,7 @@ function NavBar() {
               <p className="">Home</p>
               <span className="absolute -bottom-1 left-0 w-0 transition-all h-1 bg-yellow-400"></span>
             </Link>
-            <Link
+            {/* <Link
               href="/about"
               className={
                 router.pathname === '/about'
@@ -47,7 +47,7 @@ function NavBar() {
             >
               <p className="">About</p>
               <span className="absolute -bottom-1 left-0 w-0 transition-all h-1 bg-yellow-400"></span>
-            </Link>
+            </Link> */}
             <Link
               href="/project"
               className={
@@ -59,7 +59,7 @@ function NavBar() {
               <p className="">Projects</p>
               <span className="absolute -bottom-1 left-0 w-0 transition-all h-1 bg-yellow-400"></span>
             </Link>
-            <Link
+            {/* <Link
               href="/skills"
               className={
                 router.pathname === '/skills'
@@ -69,7 +69,7 @@ function NavBar() {
             >
               <p className="">Skills</p>
               <span className="absolute -bottom-1 left-0 w-0 transition-all h-1 bg-yellow-400"></span>
-            </Link>
+            </Link> */}
             <Link
               href="/contact"
               className={

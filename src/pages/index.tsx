@@ -12,6 +12,7 @@ import Skills from '@/components/Skills'
 import PreLoading from '@/components/PreLoading'
 import PageTransition from '@/components/PageTransition'
 import { forwardRef, useEffect, useState } from 'react'
+import Project from './project'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,11 +29,10 @@ function HomePage(props: IndexPageProps, ref: IndexPageRef) {
     'hidden drop-shadow-xl lg:block socialmedia-links fixed top-80 lg:w-12 lg:h-56 bg-black rounded-r-xl z-50 transition-opacity ease-in duration-700 opacity-0'
 
   const listenToScroll = () => {
-    let heightToHideFrom = 150
+    let heightToHideFrom = 5840
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop
     setHeight(winScroll)
-
     if (winScroll > heightToHideFrom) {
       isVisible && setIsVisible(false)
     } else {
@@ -67,7 +67,17 @@ function HomePage(props: IndexPageProps, ref: IndexPageRef) {
               <div>
                 <Home />
               </div>
-              <div>
+              <div id='about'>
+                <About />
+              </div>
+              {/* <div>
+                <Project />
+              </div> */}
+              <div id='skills'>
+                <Skills />
+              </div>
+              <div id="contact">
+                <Contact />
               </div>
             </div>
             <div className="">
