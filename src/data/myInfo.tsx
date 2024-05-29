@@ -333,7 +333,9 @@ export const myInfo = {
       fullDescription:`In this project, I used Natural Language Processing (NLP) and K-Means Clustering to predict movie similarities. By analyzing the plot summaries and other textual data of movies, the model clusters similar movies together, helping users find movies with related content and themes.`,
       images: [
         "/Images/yolo/movie.jpg",
-      ]
+      ],
+      typeWork : 'Individual Work ',
+      techUsed : ['Python','NLP','Machine Learning'],
     },{
       id:3987,
       title : "Twitter Sentiment Analysis Model Using NLP and Machine Learning",
@@ -342,7 +344,9 @@ export const myInfo = {
       fullDescription:`In this project, I built a Twitter sentiment analysis model using Natural Language Processing (NLP) and machine learning techniques. The model analyzes tweets to determine the sentiment (positive, negative, or neutral), providing insights into public opinions and trends on various topics.`,
       images: [
         "/Images/yolo/twitter.jpg",
-      ]
+      ],
+      typeWork : 'Individual Work ',
+      techUsed : ['Python','NLP','Machine Learning'],
     },
     {
       id:13455,
@@ -352,7 +356,9 @@ export const myInfo = {
       fullDescription:`In this project, I collected facial data of six actors from various scenes in a TV show. Using YOLO (You Only Look Once) to detect the person, I then extracted the face from the detected region. Finally, I identified the actors using a Convolutional Neural Network (CNN) model for face recognition.`,
       images: [
         "/Images/yolo/friends.png",
-      ]
+      ],
+      typeWork : 'Individual Work ',
+      techUsed : ['Python','Tensorflow','OpenCV','YOLO','CNN'],
     },
     {
       id:59634,
