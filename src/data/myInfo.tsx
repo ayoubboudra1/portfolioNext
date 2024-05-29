@@ -5,7 +5,7 @@ export const myInfo = {
   myEmail: 'ayoub.boudra1@gmail.com',
   myPhone : '+212632697321',
   smallDescription:
-    "I am a Full stack Web Developer and Data Scientist passionate about continuous learning and exploring emerging technologies.",
+    "Data Science and AI Student Passionate About  New Technologies and Learning New Skills.",
   myImagePath: '/Images/profile.jpg',
   descriptionAboutMe:
     <>
@@ -40,6 +40,13 @@ export const myInfo = {
         'I gained valuable skills in Next.js, TypeScript, Tailwind CSS, and Java Spring Boot. I also learned how to effectively manage teamwork using Scrum methodologies and work with RESTful APIs.',
     },
     {
+      title: "Freelance as JavaScript Full-stack Web Developer.",
+      location : '',
+      date: '1-Sep-2021, 1-Oct-2023',
+      description:
+        "Converted a web application developed in Laravel to a new version built exclusively with Next.js, encompassing both the frontend and backend development. Leveraged Prisma to enhance the backend functionality.",
+    },
+    {
       title: "Master's in Data Science & Intelligent Systems.",
       location : 'Faculty Of Science And Technology',
       date: '2022, Today',
@@ -47,12 +54,15 @@ export const myInfo = {
         "provides a strong foundation in essential aspects of data science and artificial intelligence. It covers topics like machine learning, knowledge engineering, and analyzing large datasets. The program also includes modules focused on development, offering practical skills in software development.",
     },
     {
-      title: "Freelance as JavaScript Full-stack Web Developer.",
-      location : '',
-      date: '1-Sep-2021, 1-Oct-2023',
-      description:
-        "Converted a web application developed in Laravel to a new version built exclusively with Next.js, encompassing both the frontend and backend development. Leveraged Prisma to enhance the backend functionality.",
-    },
+      title: "Full Stack JavaScript Developer with Generative AI Expertise",
+      location : 'PowerGo',
+      date: '1-Feb-2024, Today',
+      description:`As a Full Stack JavaScript Developer, I am developing a web application designed to help
+      users access information and collect data using Large Language Models (LLM). This
+      application aims to assist users in obtaining grants by leveraging advanced AI techniques
+      to streamline the process and provide accurate, relevant information efficiently.
+      `
+    }
   ],
   areasOfInterst: [
     {
@@ -101,7 +111,7 @@ export const myInfo = {
       percentage: '75%',
     },
     {
-      skillName: 'Bootstrap, TailwindCss',
+      skillName: 'Bootstrap, TailwindCSS',
       percentage: '75%',
     },
     {
@@ -121,11 +131,11 @@ export const myInfo = {
       percentage: '75%',
     },
     {
-      skillName: 'ReactJS, NextJS, Angular',
+      skillName: 'ReactJS, NextJS, Angular,NestJS',
       percentage: '75%',
     },
     {
-      skillName: 'Docker, Jenkins',
+      skillName: 'Docker, Jenkins, Kubernetes',
       percentage: '50%',
     }
   ],
@@ -135,7 +145,7 @@ export const myInfo = {
       percentage: '75%',
     },
     {
-      skillName: 'NoSQL( MONGODB)',
+      skillName: 'NoSQL( MongoDB, Cassandra, Neo4j )',
       percentage: '50%',
     },
     {
@@ -143,25 +153,21 @@ export const myInfo = {
       percentage: '75%',
     },
     {
-      skillName: 'MERISE & UML',
+      skillName: 'Merise & UML',
       percentage: '75%',
     },
     {
-      skillName: 'HADOOP ECOSYSTEM',
+      skillName: 'Hadoop, Spark, pySpark, Kafka',
       percentage: '50%',
     },
     {
-      skillName: 'Business Intelligence',
+      skillName: 'Business Intelligence, PowerBI',
       percentage: '50%',
     },
     {
       skillName: 'Agile Methods (SCRUM)',
       percentage: '50%',
     },
-    {
-      skillName: 'JUnit, Mockito',
-      percentage: '50%',
-    }
   ],
   languages: [
     {
@@ -320,10 +326,39 @@ export const myInfo = {
   ],
   projects : [
     {
+      id:39450,
+      title : "Movie Similarity Prediction Using NLP and K-Means Clustering",
+      tags  : ['Machine Learning'],
+      date : 'Jan,2024',
+      fullDescription:`In this project, I used Natural Language Processing (NLP) and K-Means Clustering to predict movie similarities. By analyzing the plot summaries and other textual data of movies, the model clusters similar movies together, helping users find movies with related content and themes.`,
+      images: [
+        "/Images/yolo/movie.jpg",
+      ]
+    },{
+      id:3987,
+      title : "Twitter Sentiment Analysis Model Using NLP and Machine Learning",
+      tags  : ['Machine Learning'],
+      date : 'Jan,2024',
+      fullDescription:`In this project, I built a Twitter sentiment analysis model using Natural Language Processing (NLP) and machine learning techniques. The model analyzes tweets to determine the sentiment (positive, negative, or neutral), providing insights into public opinions and trends on various topics.`,
+      images: [
+        "/Images/yolo/twitter.jpg",
+      ]
+    },
+    {
+      id:13455,
+      title : "Real-time person detection and face identification system using YOLO and CNN",
+      tags  : ['Machine Learning'],
+      date : 'Dec,2024',
+      fullDescription:`In this project, I collected facial data of six actors from various scenes in a TV show. Using YOLO (You Only Look Once) to detect the person, I then extracted the face from the detected region. Finally, I identified the actors using a Convolutional Neural Network (CNN) model for face recognition.`,
+      images: [
+        "/Images/yolo/friends.png",
+      ]
+    },
+    {
       id:59634,
       title : "Migrating a Laravel-based Gestion Syndic Application to Next.js",
       tags  : ['Web Application'],
-      date : 'Sep-2023 ',
+      date : 'Sep,2023 ',
       fullDescription : "I successfully migrated an application from Laravel to Next.js, leveraging Next.js as the comprehensive framework for front-end and back-end development. To ensure a secure connection with a PostgreSQL database, I seamlessly integrated Prisma. Furthermore, I implemented authentication using NextAuth.js, along with incorporating additional Node.js libraries to enhance various functionalities within the application. This migration not only streamlined the development process but also fortified the application's security and expanded its capabilities through the integration of various powerful libraries.",
       images : [
         '/Images/gsyndic/1.png',
@@ -338,7 +373,7 @@ export const myInfo = {
       id:32509,
       title : "Personal Portfolio built with Next.js and Tailwind CSS",
       tags  : ['Web Application'],
-      date : 'July-2023',
+      date : 'July,2023',
       fullDescription : "The website was developed using Next.js and Tailwind CSS by Ayoub Boudra. It is hosted on Vercel.",
       images : [
         '/Images/portfolio/1.png',
@@ -353,7 +388,7 @@ export const myInfo = {
       id:43209,
       title : "Exploring Car Price Data in Morocco: Collection and Cleaning",
       tags  : ['Machine Learning','Data Analysis'],
-      date : 'June-2023',
+      date : 'June,2023',
       fullDescription : "Car Price Prediction: Collecting car data from multiple sources, cleaning and visualizing a dataset of around 10,000 samples, and utilizing a decision tree algorithm to create a model for predicting car prices.",
       images : [
         '/Images/car.png',
@@ -367,7 +402,7 @@ export const myInfo = {
       id:0,
       title : "Clustering for Effective Customer Segmentation and Dataset Analysis",
       tags  : ['Machine Learning','Data Analysis'],
-      date : 'June-2023',
+      date : 'June,2023',
       fullDescription : "In this project, I began by working with a customer selling dataset. After cleaning the data, my focus shifted towards clustering the clients using various clustering algorithms. The goal was to group similar clients together based on their purchasing patterns and behaviors. By applying these clustering techniques, I aimed to uncover hidden information and gain insights into customer segmentation and preferences within the dataset. This analysis provides valuable knowledge that can be utilized for targeted marketing strategies and personalized customer experiences.",
       images : [
         '/Images/customerSegmentation.jpg',
@@ -381,7 +416,7 @@ export const myInfo = {
       id:1,
       title : "Facial-Based Age and Gender Detection",
       tags  : ['Machine Learning','Computer Vision'],
-      date : 'April-2023',
+      date : 'April,2023',
       fullDescription : "This project involved collecting and cleaning a dataset of over 25,000 facial images. We conducted experiments with different models to achieve optimal results for facial analysis tasks such as age and gender detection. Finally, we successfully implemented the chosen model into a web application for practical usage.",
       images : [
         '/Images/GenderAge/sddefault.jpg',
@@ -397,7 +432,7 @@ export const myInfo = {
       id:3,
       title : "Simple Image Processing Desktop Application",
       tags  : ['Desktop Application','Computer Vision'],
-      date : 'April-2022',
+      date : 'April,2022',
       fullDescription : "This desktop application is specifically designed for image processing tasks, allowing users to apply various filters and perform basic editing operations such as rotation, cropping, and selection. It was developed using pyQT, a Python framework for creating graphical user interfaces, and leverages the powerful filtering functions provided by OpenCV. With this application, users can enhance and manipulate images by applying a wide range of filters available in OpenCV, resulting in visually appealing and customized outputs.",
       images : [
         '/Images/ImgProc/1.png',
@@ -413,7 +448,7 @@ export const myInfo = {
       id:4,
       title : "Resource Management",
       tags  : ['Web Application'],
-      date : 'April-2022',
+      date : 'April,2022',
       fullDescription : "This website, developed using Next.js and Spring Boot, is designed for efficient management of stock, orders, suppliers, and repair requests. The development process involved utilizing UML diagrams for the initial design and adopting Scrumwise for effective team management. The website serves as a comprehensive solution, providing capabilities to track and manage inventory, process orders, handle supplier relationships, and efficiently manage repair requests.",
       images : [
         '/Images/no-image-available.jpg',
@@ -425,7 +460,7 @@ export const myInfo = {
       id:5,
       title : "E-commerce Website for Computer Equipment using JEE",
       tags  : ['Web Application'],
-      date : 'Dec-2021',
+      date : 'Dec,2021',
       fullDescription : "This e-commerce website, built using Java Enterprise Edition (JEE), serves as an online platform for selling computer machines. In addition to the customer-facing frontend, it includes an administrative section. The admin side allows authorized users to efficiently manage orders and products. This feature empowers administrators to handle order processing, inventory management, and product updates, ensuring smooth operations of the e-commerce business.",
       images : [
         '/Images/no-image-available.jpg',
@@ -437,7 +472,7 @@ export const myInfo = {
       id:98765,
       title : "Weather Application with Angular and Weather API",
       tags  : ['Web Application'],
-      date : 'July-2021',
+      date : 'July,2021',
       fullDescription : "The Weather Application is a responsive Angular application that allows users to search for a city and retrieve the current weather information for that location. Powered by a free weather API's RESTful interface, the application seamlessly integrates with the API to fetch real-time weather data. Users can simply enter the desired city name in the search bar, and the application dynamically displays the current weather conditions, including temperature, humidity, wind speed, and more. With its user-friendly interface and reliable data source, the Weather Application provides an intuitive way to stay updated on the weather conditions of any desired city.",
       images : [
         '/Images/weather/1.png',
@@ -452,7 +487,7 @@ export const myInfo = {
       id:6,
       title : "Resource management for a leather company",
       tags  : ['Web Application'],
-      date : 'May-2021 -- Juin-2021',
+      date : 'May,2021 - Juin,2021',
       fullDescription : "A compact application built with Next.js, Spring Boot, and other technologies specifically designed for an international leather company. It effectively manages stock, client transactions, orders, suppliers, and other essential operations.",
       images : [
         '/Images/gescom/1.png',
@@ -468,7 +503,7 @@ export const myInfo = {
       id:7,
       title : ' Library Management Application with JAVA Swing',
       tags  : ['Desktop Application'],
-      date : 'Mars-2021',
+      date : 'Mars,2021',
       fullDescription : " library management application developed using JAVA Swing. UML models, including class diagrams and activity diagrams..., MySQL as the database, and JDBC for database interaction. The application provides advanced features, including book return management, book search, and more.",
       images : [
         '/Images/swing/1.png',
@@ -482,7 +517,7 @@ export const myInfo = {
     {
       id:8,
       title : 'United States - Tourism and News Website',
-      date : 'Dec-2020',
+      date : 'Dec,2020',
       tags  : ['Web Application'],
       fullDescription : 'web platform that provides detailed information about the United States as a tourist destination. With insights into diverse attractions, culture, landmarks, and more, it serves as a valuable resource for travelers. Stay updated with the latest events and developments through the dedicated news section. The admin panel ensures effortless content management, keeping tourist information current and enabling the addition of new attractions and timely news articles.',
       images : [

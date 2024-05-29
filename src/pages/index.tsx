@@ -68,6 +68,7 @@ function HomePage(props: IndexPageProps, ref: IndexPageRef) {
                 <Home />
               </div>
               <div>
+                {/* <About /> */}
               </div>
             </div>
             <div className="">
