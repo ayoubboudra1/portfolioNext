@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import { MyInfo } from './myInfoType'
 
-export const myInfo = {
+export const myInfo:MyInfo = {
   fullName: 'AYOUB BOUDRA',
   myEmail: 'ayoub.boudra1@gmail.com',
   myPhone : '+212632697321',
@@ -18,20 +19,20 @@ export const myInfo = {
         I have developed valuable skills that allow me to work well within teams and advance in my career.
     </>,
   myExperience: [
-    {
-      title: 'DEUST degree in Mathematics, Physics, and Computer Science.', 
-      location : 'Faculty Of Science And Technology',
-      date: '2018 , 2021',
-      description:
-        "The degree program provides a comprehensive education in mathematics, physics, and computer science, equipping me with essential skills in these domains.",
-    },
-    {
-      title: "Bachelor's degree in Computer Science.",
-      location : 'Faculty Of Science And Technology',
-      date: '2021, 2022',
-      description:
-        'This degree has provided me with a fundamental understanding of computer science and its basic concepts. It has equipped me with essential skills in various areas of computer science, allowing me to grasp the foundational principles and concepts in the field.',
-    },
+    // {
+    //   title: 'DEUST degree in Mathematics, Physics, and Computer Science.', 
+    //   location : 'Faculty Of Science And Technology',
+    //   date: '2018 , 2021',
+    //   description:
+    //     "The degree program provides a comprehensive education in mathematics, physics, and computer science, equipping me with essential skills in these domains.",
+    // },
+    // {
+    //   title: "Bachelor's degree in Computer Science.",
+    //   location : 'Faculty Of Science And Technology',
+    //   date: '2021, 2022',
+    //   description:
+    //     'This degree has provided me with a fundamental understanding of computer science and its basic concepts. It has equipped me with essential skills in various areas of computer science, allowing me to grasp the foundational principles and concepts in the field.',
+    // },
     {
       title: 'Internship as a Full-stack Web Developer.',
       location : 'INNOV-DS',
@@ -46,13 +47,13 @@ export const myInfo = {
       description:
         "Converted a web application developed in Laravel to a new version built exclusively with Next.js, encompassing both the frontend and backend development. Leveraged Prisma to enhance the backend functionality.",
     },
-    {
-      title: "Master's in Data Science & Intelligent Systems.",
-      location : 'Faculty Of Science And Technology',
-      date: '2022, Today',
-      description:
-        "provides a strong foundation in essential aspects of data science and artificial intelligence. It covers topics like machine learning, knowledge engineering, and analyzing large datasets. The program also includes modules focused on development, offering practical skills in software development.",
-    },
+    // {
+    //   title: "Master's in Data Science & Intelligent Systems.",
+    //   location : 'Faculty Of Science And Technology',
+    //   date: '2022, Today',
+    //   description:
+    //     "provides a strong foundation in essential aspects of data science and artificial intelligence. It covers topics like machine learning, knowledge engineering, and analyzing large datasets. The program also includes modules focused on development, offering practical skills in software development.",
+    // },
     {
       title: "Full Stack JavaScript Developer with Generative AI Expertise",
       location : 'PowerGo',
@@ -63,6 +64,35 @@ export const myInfo = {
       to streamline the process and provide accurate, relevant information efficiently.
       `
     }
+  ],
+  myEducation: [
+    {
+      title: "Baccalaureate in Physical Sciences",
+      location: "Morocco",
+      date: "Sep-2017 , Jul-2018",
+      description: "The Baccalaureate in Physical Sciences is a high school diploma in Morocco that provides a strong foundation in physics, mathematics, and other sciences. This program equips students with essential analytical and problem-solving skills, preparing them for further studies in scientific and technical fields."
+    },
+    {
+      title: 'DEUST degree in Mathematics, Physics, and Computer Science.', 
+      location : 'Faculty Of Science And Technology',
+      date: 'Sep-2018 , Jul-2021',
+      description:
+        "The degree program provides a comprehensive education in mathematics, physics, and computer science, equipping me with essential skills in these domains.",
+    },
+    {
+      title: "Bachelor's degree in Computer Science.",
+      location : 'Faculty Of Science And Technology',
+      date: 'Sep-2021, Jul-2022',
+      description:
+        'This degree has provided me with a fundamental understanding of computer science and its basic concepts. It has equipped me with essential skills in various areas of computer science, allowing me to grasp the foundational principles and concepts in the field.',
+    },
+    {
+      title: "Master's in Data Science & Intelligent Systems.",
+      location : 'Faculty Of Science And Technology',
+      date: 'Sep-2022, Jul-2024',
+      description:
+        "provides a strong foundation in essential aspects of data science and artificial intelligence. It covers topics like machine learning, knowledge engineering, and analyzing large datasets. The program also includes modules focused on development, offering practical skills in software development.",
+    },
   ],
   areasOfInterst: [
     {

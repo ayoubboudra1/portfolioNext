@@ -2,7 +2,20 @@ import { myInfo } from '@/data/myInfo'
 import React from 'react'
 import TimeLineItem from './TimeLineItem'
 
-function TimeLine() {
+
+
+interface Experience {
+  title: string;
+  location: string;
+  date: string;
+  description: string;
+}
+
+interface TimeLineInterface {
+  data: Experience[];
+}
+
+function TimeLine({data}: TimeLineInterface) {
   return (
     <>
       <section>
@@ -12,7 +25,7 @@ function TimeLine() {
               <div className="container mx-auto w-full h-full">
                 <div className="relative wrap overflow-hidden p-10 h-full">
                   <div
-                    className="border-2-2 border-yellow-555 absolute h-full border"
+                    className="border-2-2 border-yellow-555 absolute h-full border hidden md:block"
                     style={{
                       right: '50%',
                       border: '2px solid #FFC100',
@@ -20,14 +33,14 @@ function TimeLine() {
                     }}
                   ></div>
                   <div
-                    className="border-2-2 border-yellow-555 absolute h-full border"
+                    className="border-2-2 border-yellow-555 absolute h-full border hidden md:block"
                     style={{
                       left: '50%',
                       border: '2px solid #FFC100',
                       borderRadius: '1%',
                     }}
                   ></div>
-                  {myInfo.myExperience.map((item, index) => (
+                  {data.map((item, index) => (
                     <TimeLineItem key={index} index={index} item={item} />
                   ))}
                 </div>
