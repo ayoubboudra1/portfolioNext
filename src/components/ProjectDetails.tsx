@@ -111,7 +111,7 @@ function ProjectDetails({content}:Props) {
                     </h2>
                   <div className="w-11/12 m-auto">
                   <div className=" p-5 border border-white rounded-lg bg-white shadow-md">
-                    <h5 className="text-lg font-bold mx-5 mt-2 md:text-2xl w-11/12    text-gray-900">
+                    {/* <h5 className="text-lg font-bold mx-5 mt-2 md:text-2xl w-11/12    text-gray-900">
                         Categories
                         </h5>
                         <div className='mx-12 my-5'>
@@ -120,9 +120,9 @@ function ProjectDetails({content}:Props) {
                                 <button disabled key={'tag'+index} className="bg-yellow-400 m-1 hover:bg-yellow-500 text-white text-sm font-medium mr-2 px-3 py-1 rounded-full cursor-pointer">{value}</button>
                             )  
                             }
-                        </div>
+                        </div> */}
                         <h5 className="text-lg font-bold mx-5 mt-2 md:text-2xl w-11/12    text-gray-900">
-                        Technologies used
+                        Technologies used:
                         </h5>
                         <div className='mx-12 my-5'>
                                 {
@@ -132,7 +132,7 @@ function ProjectDetails({content}:Props) {
                                     }
                         </div>
                         <h5 className="text-lg font-bold mx-5 mt-2 md:text-2xl w-11/12    text-gray-900">
-                        Description
+                        Description:
                         </h5>
                         <p className="text-lg font-normal mx-7 md:text-xl">
                         {
@@ -140,12 +140,11 @@ function ProjectDetails({content}:Props) {
                         }
                         </p>
                         <h5 className="text-lg font-bold mx-5 mt-2 md:text-2xl w-11/12    text-gray-900">
-                        More Details
+                        More Details:
                         </h5>
                         <div className='my-3 text-lg font-normal mx-8 md:text-xl'>
-                          <p className=''>type of work : <span className='text-black'>{content.typeWork}</span></p>
-                          <p>Date : {content.date}</p>
-
+                          <p className=''>type of work : <span className='italic'>{content.typeWork}</span></p>
+                          <p>Date : <span className='italic'>{content.date}</span></p>
                         </div>
 
                   </div>
