@@ -15,11 +15,13 @@ function Filter({categories,setCategories}:Props) {
     
     const listCategories = [
         'All',
-        'Web Application',
-        'Machine Learning',
-        'Computer Vision',
-        'Data Analysis',
-        'Desktop Application'
+        // 'Web Application',
+        // 'Machine Learning',
+        // 'Computer Vision',
+        // 'Data Analysis',
+        // 'Desktop Application',
+        'Development',
+        'Data & AI'
     ]
         
     

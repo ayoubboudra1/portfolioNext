@@ -57,7 +57,7 @@ function ProjectDetails({content}:Props) {
                   <button
                     onClick={()=>handlClick('previous')}
                     type="button"
-                    className="mx-6 absolute top-0 left-0 z-30 flex items-center justify-center h-full  cursor-pointer group focus:outline-none"
+                    className={content.images.length > 1 ?"mx-6 absolute top-0 left-0 z-30 flex items-center justify-center h-full  cursor-pointer group focus:outline-none":"hidden"}
                     data-carousel-prev
                   >
                     {/* <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> */}
@@ -82,7 +82,7 @@ function ProjectDetails({content}:Props) {
                   <button
                     onClick={()=>handlClick('next')}
                     type="button"
-                    className="mx-6  absolute top-0 right-0 z-30 flex items-center justify-center h-full  cursor-pointer group focus:outline-none"
+                    className={content.images.length > 1 ?"mx-6 absolute top-0 left-0 z-30 flex items-center justify-center h-full  cursor-pointer group focus:outline-none":"hidden"}
                     data-carousel-next
                   >
                     {/* <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> */}

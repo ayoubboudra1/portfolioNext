@@ -39,7 +39,7 @@ function Projects({ setContent }: ProjectsProps) {
             Portfolio
             </h1>
           </motion.div>
-          <motion.div
+          {/* <motion.div
             className="py-8 px-4  max-w-screen-xl  lg:pt-16 lg:pb-5 md:mx-24"
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -48,7 +48,7 @@ function Projects({ setContent }: ProjectsProps) {
           >
             
            <Filter categories={categories} setCategories={setCategories} />
-          </motion.div>
+          </motion.div> */}
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mx-8 md:mx-16 lg:mx-20"
             initial={{ y: 100, opacity: 0 }}
@@ -56,14 +56,16 @@ function Projects({ setContent }: ProjectsProps) {
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 1.1 }}
           >
-            {
+            {/* {
               categories === 'All' 
                 ?myInfo.projects.map((value,index) => <ProjectCard  project={value} key={'p'+index}  />)
                 :myInfo.projects
                           .filter((value,index) => value.tags.includes(categories))
                           .map((value,index)=> <ProjectCard  project={value} key={'p'+index}  />)
+            } */}
+            {
+              myInfo.projects.map((value,index) => <ProjectCard  project={value} key={'p'+index}  />)
             }
-
             {/* <ProjectCard setShowModal={setShowModal} img="/Images/project.png" />
             <ProjectCard setShowModal={setShowModal} img="/Images/project.jpg" />
             <ProjectCard setShowModal={setShowModal} img="/Images/project.png" /> */}
