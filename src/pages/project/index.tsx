@@ -67,6 +67,7 @@ function ProjectPage(props: IndexPageProps, ref: IndexPageRef) {
           </div>
         </main>
       </PageTransition>
+      
     </>
   )
 }

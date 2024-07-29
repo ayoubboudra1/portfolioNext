@@ -58,24 +58,24 @@ function ProjectCard({ project }: ProjectCardProps) {
           <div className="p-5">
             <h1 className='text-xl font-bold'>{project.title}</h1>
             <p className='text-gray-600 italic'>{project.date}</p>
-            <div className=''>
+            {/* <div className=''>
                   {
                     project.tags.map((value,index) => 
                       <span key={'tag'+index} className="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full ">{value}</span>
                     )  
                   }
-            </div>
+            </div> */}
             
             <p className="text-medium mb-5 text-gray-700 truncate">
               {project.fullDescription}
             </p>
-            {/* <div className='my-2'>
+            <div className='my-2'>
                   {
                     project.techUsed.map((value,index) => 
                       <i key={'tag'+index} className="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full ">{value}</i>
                     )  
                   }
-            </div> */}
+            </div>
             <button
               className="w-full rounded-md   py-2 text-white  bg-yellow-400  shadow-lg   "
               onClick={()=> route.push(`/project/${project.id}`)}

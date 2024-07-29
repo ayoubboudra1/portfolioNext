@@ -27,22 +27,25 @@ function ProjectDetails({content}:Props) {
 
   return (
     <>
-            <div className="my-24">
-                <div className='mx-5'>
-                <button onClick={()=> router.back()} className="w-full flex items-center justify-center  px-5 py-2 text-sm text-white transition-colors duration-200  border rounded-lg gap-x-2 sm:w-auto bg-yellow-400">
-                    <svg className="w-5 h-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
-                    </svg>
-                    <span>Go back</span>
-                </button>
-                </div>
+        <div className="my-24">
+            <div className='mx-5'>
+            <button onClick={()=> router.back()} className="w-full flex items-center justify-center  px-5 py-2 text-sm text-white transition-colors duration-200  border rounded-lg gap-x-2 sm:w-auto bg-yellow-400">
+                <svg className="w-5 h-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                </svg>
+                <span>Go back</span>
+            </button>
+            </div>
             <div className="relative flex flex-wrap  mt-6 w-full h-full md:h-1/2 p-2">
-              <div className="flex relative flex-col lg:flex-row ">
-                <div className="flex justify-center  relative">
+              <div className="flex relative flex-col  ">
+                <h2 className=" w-11/12  text-center  mt-4 mb-10 text-2xl md:text-3xl font-bold text-gray-900 ">
+                  {content.title}
+                </h2>
+                <div className="flex justify-center relative">
                   <div className=" flex items-center relative">
 
                     <Image
-                      width={1235}
+                      width={600}
                       height={50}
                       src={content.images[index]}
                       alt="..."
@@ -105,10 +108,8 @@ function ProjectDetails({content}:Props) {
                     {/* </span> */}
                   </button>
                 </div>
-                <div className="w-screen">
-                  <h2 className=" w-11/12  text-center  mt-4 mb-10 text-2xl md:text-3xl font-bold text-gray-900 ">
-                      {content.title}
-                    </h2>
+                <div className="w-screen mt-5">
+
                   <div className="w-11/12 m-auto">
                   <div className=" p-5 border border-white rounded-lg bg-white shadow-md">
                     {/* <h5 className="text-lg font-bold mx-5 mt-2 md:text-2xl w-11/12    text-gray-900">
@@ -155,6 +156,14 @@ function ProjectDetails({content}:Props) {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className='mx-5 mt-10'>
+            <button onClick={()=> router.back()} className="w-full flex items-center justify-center  px-5 py-2 text-sm text-white transition-colors duration-200  border rounded-lg gap-x-2 sm:w-auto bg-yellow-400">
+                <svg className="w-5 h-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                </svg>
+                <span>Go back</span>
+            </button>
             </div>
 
             </div>
