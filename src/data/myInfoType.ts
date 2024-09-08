@@ -21,8 +21,8 @@ interface AreaOfInterest {
 }
 
 interface TechnicalSkill {
-  skillName: string;
-  percentage: string;
+  skillTitle: string;
+  skillsName: string[];
 }
 
 interface Language {
@@ -57,8 +57,8 @@ export interface MyInfo {
   myExperience: Experience[];
   myEducation: Education[];
   areasOfInterst: AreaOfInterest[];
-  technicalSkillsLeft: TechnicalSkill[];
-  technicalSkillsRight: TechnicalSkill[];
+  technicalSkills: TechnicalSkill[];
+  // technicalSkillsRight: TechnicalSkill[];
   languages: Language[];
   softSkills: SoftSkill[];
   projects: Project[];

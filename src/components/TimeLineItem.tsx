@@ -30,7 +30,7 @@ function TimeLineItem({ index, item }: TimeLineItemProps) {
           <p className="mb-3 font-bold text-yellow-400 ">
             {item.date}
           </p>
-          <p className="text-sm md:text-base leading-snug text-gray-500  text-opacity-100">
+          <p className="text-justify text-sm md:text-base leading-snug text-gray-500  text-opacity-100">
             {item.description}
           </p>
         </div>

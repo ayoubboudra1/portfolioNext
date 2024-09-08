@@ -43,25 +43,17 @@ function Skills() {
             <h1 className="text-2xl md:text-3xl font-bold text-gray-900 ">
               Technical Skills
             </h1>
-            <div className="gap-8 sm:grid sm:grid-cols-2 mt-10">
+            <div className="gap-8 sm:grid sm:grid-cols-1 mx-10">
               <div>
-                {/* {myInfo.technicalSkillsLeft.map((value, index) => (
+                {myInfo.technicalSkills.map((value, index) => (
                   <OneSkill
-                    key={'L' + index}
-                    skillName={value.skillName}
-                    percentage={value.percentage}
+                    key={index}
+                    skillTitle={value.skillTitle}
+                    skillsName={value.skillsName}
                   />
-                ))} */}
+                ))}
               </div>
-              <div>
-                {/* {myInfo.technicalSkillsRight.map((value, index) => (
-                  <OneSkill
-                    key={'R' + index}
-                    skillName={value.skillName}
-                    percentage={value.percentage}
-                  />
-                ))} */}
-              </div>
+
             </div>
           </motion.div>
           <motion.div

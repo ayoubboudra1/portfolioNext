@@ -1,25 +1,23 @@
 import React from 'react'
 
 export interface OneSkillProps {
-  skillName: string
-  percentage: string
+  skillsName: string[],
+  skillTitle: string,
 }
 
-function OneSkill({ skillName, percentage }: OneSkillProps) {
+
+
+function OneSkill({ skillTitle, skillsName }: OneSkillProps) {
   return (
     <>
-      <dl>
-        <dt className="text-sm font-medium  ">{skillName}</dt>
-        <dd className="flex items-center mb-3">
-          <div className="w-full bg-gray-300 rounded h-2.5  mr-2">
-            <div
-              className="bg-yellow-400 h-2.5 rounded "
-              style={{ width: percentage }}
-            ></div>
-          </div>
-          <span className="text-sm font-medium  ">{percentage}</span>
-        </dd>
-      </dl>
+      <h3 className="text-2xl font-bold ">{skillTitle}</h3>
+      <div className="list-disc list-outside my-4">
+        {skillsName.map((skill, index) => (
+          <i key={'tag'+index} className="bg-gray-100 text-gray-800 text-lg font-semibold mx-2  px-2.5 py-2.5 rounded-full  " style={{'display':'inline-block','margin':'5px'}}>{skill}</i>
+
+      ))}
+
+      </div>
     </>
   )
 }

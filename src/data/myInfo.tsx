@@ -4,20 +4,21 @@ import { MyInfo } from './myInfoType'
 export const myInfo:MyInfo = {
   fullName: 'AYOUB BOUDRA',
   myEmail: 'ayoub.boudra1@gmail.com',
-  myPhone : '+212632697321',
+  myPhone : '+33751235169',
   smallDescription:
-    "Data Science and AI Student Passionate About  New Technologies and Learning New Skills.",
-  myImagePath: '/Images/profile.jpg',
+    "I am a Data Science/Data Analyst enthusiast with a strong interest in AI, a student passionate about new technologies, and continuously eager to learn new skills.",
+  myImagePath: '/Images/new_profile.png',
   descriptionAboutMe:
-    <>
-    I am currently pursuing a master&rsquo;s degree in <i className='text-yellow-400'>Data Science and Intelligent Systems</i> at the Faculty of Science and Technologies Fes. 
-         <br />
-         <br />
-         I possess strong analytical skills and enjoy solving problems creatively. I am adaptable and open to new challenges, always seeking opportunities for personal and professional growth.
-         <br/>
-         <br></br>
-        I have developed valuable skills that allow me to work well within teams and advance in my career.
-    </>,
+<>
+    I am currently pursuing a master’s degree in <i className='text-yellow-400'>Science et Ingénierie des Données</i> at the Faculty of Science, Université Aix-Marseille.
+    <br />
+    <br />
+    I possess strong analytical skills and enjoy solving problems creatively. I am adaptable and open to new challenges, always seeking opportunities for personal and professional growth.
+    <br/>
+    <br />
+    I have developed valuable skills that allow me to work well within teams and continue advancing in my career.
+</>
+,
   myExperience: [
     // {
     //   title: 'DEUST degree in Mathematics, Physics, and Computer Science.', 
@@ -57,7 +58,7 @@ export const myInfo:MyInfo = {
     {
       title: "Full Stack JavaScript Developer with Generative AI Expertise",
       location : 'PowerGo',
-      date: '1-Feb-2024, Today',
+      date: '1-Feb-2024, 1-Jul-2024',
       description:`As a Full Stack JavaScript Developer, I am developing a web application designed to help
       users access information and collect data using Large Language Models (LLM). This
       application aims to assist users in obtaining grants by leveraging advanced AI techniques
@@ -93,25 +94,19 @@ export const myInfo:MyInfo = {
       description:
         "provides a strong foundation in essential aspects of data science and artificial intelligence. It covers topics like machine learning, knowledge engineering, and analyzing large datasets. The program also includes modules focused on development, offering practical skills in software development.",
     },
+    {
+      title:"Data Science and Engineering.",
+      location : 'Faculty of Science, Aix-Marseille University',
+      date: 'Sep-2024, Sep-2025',
+      description: "This program provides a deep understanding of data management, analysis, and Big Data processing. With a strong focus on machine learning, artificial intelligence, cloud computing, and advanced data technologies, it emphasizes hands-on experience and problem-solving skills. Students are trained to tackle complex data challenges, design innovative solutions, and apply cutting-edge techniques in real-world scenarios, making them well-prepared for careers in data-driven industries.",
+    },
   ],
   areasOfInterst: [
-    {
-      title: 'Web Development',
-      description:"I am passionate about web development because of its dynamic nature and the ability to bring ideas to life online. The evolving web technologies and the potential to create engaging user experiences greatly interest me.",
-      icon: (
-          <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
-              fill="currentColor"
-              viewBox="0 0 20 20">
-          <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
-        </svg>
-      ),
-    },
+
     {
       title: 'Data Science',
       description:
-       "I am passionate about data science due to its dynamic nature and its ability to unlock valuable insights from vast amounts of data. The evolving field of data science and the potential to extract meaningful information greatly intrigue me.",
+       "I enjoy extracting valuable insights from complex datasets, transforming raw data into meaningful conclusions that drive decision-making and innovation.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
         fill="currentColor"
@@ -123,7 +118,7 @@ export const myInfo:MyInfo = {
     {
       title: 'Artificial Intelligence',
       description:
-       "I am passionate about artificial intelligence (AI) due to its dynamic nature and its ability to revolutionize various industries. The evolving field of AI and its potential to tackle complex problems and drive innovation greatly intrigue me.",
+       "I enjoy building intelligent systems that can learn, adapt, and automate tasks, enhancing human capabilities and improving decision-making processes.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" 
               fill="currentColor"
@@ -133,71 +128,62 @@ export const myInfo:MyInfo = {
         </svg>
       ),
     },
+    {
+      title: 'Cloud Computing',
+      description: "I enjoy leveraging cloud platforms like AWS and Azure for scalable, flexible, and powerful data processing and storage solutions.",
+      icon: (
+<svg xmlns="http://www.w3.org/2000/svg" fill='currentColor' viewBox="0 0 20 20" className='w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer' version="1.1" >
+  <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+</svg>
+      )
+    },{
+      title: 'Big Data',
+      description:"I appreciate working with large-scale data, using distributed systems to manage, process, and analyze vast amounts of information efficiently.",
+      icon: (
+          <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
+              fill="currentColor"
+              viewBox="0 0 20 20">
+            <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313M13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A5 5 0 0 0 13 5.698M14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A5 5 0 0 0 13 8.698m0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525"/>
+        </svg>
+      ),
+    },
 
   ],
-  technicalSkillsLeft: [
+  technicalSkills: [
     {
-      skillName: 'HTML, CSS',
-      percentage: '75%',
+      skillTitle: 'Langages de programmation et Framework',
+      skillsName: [ "Python", 'SQL', 'Java','Spark',  "Flask"]
     },
     {
-      skillName: 'Bootstrap, TailwindCSS',
-      percentage: '75%',
+      skillTitle: 'Data Science & AI',
+      skillsName: [ "Machine Learning",
+        "Deep Learning",
+        "NLP",
+        "Traitement d’image",
+      ]
     },
     {
-      skillName: 'JavaScript, TypeScript',
-      percentage: '75%',
+      skillTitle: 'Business Intelligence',
+      skillsName: [ "Power BI", "Tableau"]
     },
     {
-      skillName: 'C/C++',
-      percentage: '75%',
+      skillTitle: 'Bases de données',
+      skillsName: ["MySQL","OracleDB","PostgreSQL", "MongoDB"]
     },
     {
-      skillName: 'Python (Data science , ML ,DeepLearning ,Data visualisation,Data Mining,Image processing)',
-      percentage: '75%',
+      skillTitle: 'Plateformes et Outils Big Data',
+      skillsName: ["Airflow", "Kafka", "Hadoop", "Apache Spark"]
     },
     {
-      skillName: 'Java/JEE/Spring Boot',
-      percentage: '75%',
+      skillTitle: 'Outils',
+      skillsName: ["Git", "Docker", "MLOps"]
     },
     {
-      skillName: 'ReactJS, NextJS, Angular,NestJS',
-      percentage: '75%',
-    },
-    {
-      skillName: 'Docker, Jenkins, Kubernetes',
-      percentage: '50%',
+      skillTitle: 'Environnements Cloud :',
+      skillsName: [' AWS (S3,Redshift, Lambda)',' Azure']
     }
-  ],
-  technicalSkillsRight: [
-    {
-      skillName: 'SQL (MySql , PostgreSQL)',
-      percentage: '75%',
-    },
-    {
-      skillName: 'NoSQL( MongoDB, Cassandra, Neo4j )',
-      percentage: '50%',
-    },
-    {
-      skillName: 'Git/GitHub',
-      percentage: '75%',
-    },
-    {
-      skillName: 'Merise & UML',
-      percentage: '75%',
-    },
-    {
-      skillName: 'Hadoop, Spark, pySpark, Kafka',
-      percentage: '50%',
-    },
-    {
-      skillName: 'Business Intelligence, PowerBI',
-      percentage: '50%',
-    },
-    {
-      skillName: 'Agile Methods (SCRUM)',
-      percentage: '50%',
-    },
   ],
   languages: [
     {

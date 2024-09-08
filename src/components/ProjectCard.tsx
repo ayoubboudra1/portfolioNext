@@ -79,6 +79,7 @@ function ProjectCard({ project }: ProjectCardProps) {
             <button
               className="w-full rounded-md   py-2 text-white  bg-yellow-400  shadow-lg   "
               onClick={()=> route.push(`/project/${project.id}`)}
+              
             >
 
               See More
