@@ -438,7 +438,7 @@ export const myInfo:MyInfo = {
     {
       id: 2,
       title: "Colon Disease Detection with PySpark MLlib",
-      tags: ['Big Data', 'Healthcare', 'Machine Learning'],
+      tags: ['Data & AI'],
       date: '2023',
       fullDescription: "This project aimed to detect colon diseases using PySpark MLlib for processing and analyzing large medical datasets. Steps included data collection, cleaning, and visualization to identify key trends. Machine learning models were then trained to predict the presence of colon diseases, providing accurate results and enabling clear visualizations to enhance data understanding.",
       images: [
