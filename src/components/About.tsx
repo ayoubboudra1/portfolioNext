@@ -56,21 +56,7 @@ function About() {
             </div>
           </motion.div>
 
-          <motion.div
-            className=""
-            ref={ref}
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -10, opacity: 0 }}
-            transition={{ duration: 1 }}
-          >
-            <div className="text-center">
-              <h1 className="my-10 text-4xl italic  font-extrabold tracking-tight leading-none  md:text-5xl  ">
-                Education
-              </h1>
-            </div>
-            <TimeLine data={myInfo.myEducation} />
-          </motion.div>
+         
           <motion.div
             className=""
             ref={ref}
@@ -85,6 +71,22 @@ function About() {
               </h1>
             </div>
             <TimeLine data={myInfo.myExperience} />
+          </motion.div>
+
+          <motion.div
+            className=""
+            ref={ref}
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -10, opacity: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <div className="text-center">
+              <h1 className="my-10 text-4xl italic  font-extrabold tracking-tight leading-none  md:text-5xl  ">
+                Education
+              </h1>
+            </div>
+            <TimeLine data={myInfo.myEducation} />
           </motion.div>
           <motion.div
             className=""

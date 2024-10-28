@@ -33,7 +33,7 @@ const SocialMedia = ({ blocStyle }: SocialMediaProps) => {
         </Link>
       </div>
       <div className="facebook hover:scale-105">
-        <Link href="https://wa.link/izoqk0" target="_blank">
+        <Link href="https://wa.me/33751235169" target="_blank">
           <Image
             className="w-9"
             src="/Icons/whatsapp.png"

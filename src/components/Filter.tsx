@@ -14,14 +14,15 @@ function Filter({categories,setCategories}:Props) {
     const classSelected = "cursor-pointer bg-yellow-400 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-yellow-400 md:p-0 rounded focus:outline-none"
     
     const listCategories = [
-        'All',
+        // 'All',
         // 'Web Application',
         // 'Machine Learning',
         // 'Computer Vision',
         // 'Data Analysis',
         // 'Desktop Application',
+        'Data & AI',
         'Development',
-        'Data & AI'
+        
     ]
         
     

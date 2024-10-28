@@ -13,9 +13,9 @@ type IndexPageProps = {}
 type IndexPageRef = React.ForwardedRef<HTMLDivElement>
 function ProjectPage(props: IndexPageProps, ref: IndexPageRef) {
   const [isVisible, setIsVisible] = useState(true)
-  const [content,setContent] = useState<ProjectProps>(project0)
+  
   const [height, setHeight] = useState(0)
-  const [showModal, setShowModal] = useState(false)
+  // const [showModal, setShowModal] = useState(false)
 
   const visibleClassName =
     'hidden drop-shadow-xl lg:block socialmedia-links fixed top-80 lg:w-12 lg:h-56 bg-black rounded-r-xl z-50 transition-opacity ease-in duration-700 opacity-100'
@@ -58,7 +58,7 @@ function ProjectPage(props: IndexPageProps, ref: IndexPageRef) {
           <div className="page absolute">
             <div className="body mt-16" id="home">
               <div className="">
-                <Projects showModal={showModal} setShowModal={setShowModal} setContent={setContent} />
+                <Projects />
               </div>
             </div>
             <div className="">

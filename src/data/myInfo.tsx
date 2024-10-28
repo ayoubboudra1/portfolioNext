@@ -1,12 +1,14 @@
 import Image from 'next/image'
 import { MyInfo } from './myInfoType'
+import Link from 'next/link'
+import { ReactSVG } from 'react-svg'
 
 export const myInfo:MyInfo = {
   fullName: 'AYOUB BOUDRA',
   myEmail: 'ayoub.boudra1@gmail.com',
   myPhone : '+33751235169',
   smallDescription:
-    "I am a Data Science/Data Analyst enthusiast with a strong interest in AI, a student passionate about new technologies, and continuously eager to learn new skills.",
+    "I am a data science and data engineering student, passionate about new technologies and always eager to learn new skills.",
   myImagePath: '/Images/new_profile.png',
   descriptionAboutMe:
 <>
@@ -20,72 +22,35 @@ export const myInfo:MyInfo = {
 </>
 ,
   myExperience: [
-    // {
-    //   title: 'DEUST degree in Mathematics, Physics, and Computer Science.', 
-    //   location : 'Faculty Of Science And Technology',
-    //   date: '2018 , 2021',
-    //   description:
-    //     "The degree program provides a comprehensive education in mathematics, physics, and computer science, equipping me with essential skills in these domains.",
-    // },
-    // {
-    //   title: "Bachelor's degree in Computer Science.",
-    //   location : 'Faculty Of Science And Technology',
-    //   date: '2021, 2022',
-    //   description:
-    //     'This degree has provided me with a fundamental understanding of computer science and its basic concepts. It has equipped me with essential skills in various areas of computer science, allowing me to grasp the foundational principles and concepts in the field.',
-    // },
     {
-      title: 'Internship as a Full-stack Web Developer.',
-      location : 'INNOV-DS',
-      date: '1-April-2021, 1-July-2021',
-      description:
-        'I gained valuable skills in Next.js, TypeScript, Tailwind CSS, and Java Spring Boot. I also learned how to effectively manage teamwork using Scrum methodologies and work with RESTful APIs.',
+      title: "Data Scientist | AI-based Grant Assistance Application",
+      location: "PowerGo France, Casablanca, Maroc",
+      date: "02/2024 - 07/2024",
+      description: 
+        "Developed a web application using generative AI to simplify grant management. Integrated LLMs for automatic content generation and data analysis. Automated data collection via API (Serper) to improve precision and efficiency. Managed the project using Kanban to deliver milestones on time."
     },
     {
-      title: "Freelance as JavaScript Full-stack Web Developer.",
-      location : '',
-      date: '1-Sep-2021, 1-Oct-2023',
-      description:
-        "Converted a web application developed in Laravel to a new version built exclusively with Next.js, encompassing both the frontend and backend development. Leveraged Prisma to enhance the backend functionality.",
+      title: "Data Analyst | Website Performance Data Analysis",
+      location: "NewDev Freelance, Fès, Maroc",
+      date: "07/2023 - 09/2023",
+      description: 
+      "Analyzed traffic and conversion data using Google Analytics. Performed predictive modeling of user behavior to optimize marketing performance. Cleaned and analyzed data using Python (Pandas, NumPy). Prepared reports and recommendations for stakeholders."
     },
-    // {
-    //   title: "Master's in Data Science & Intelligent Systems.",
-    //   location : 'Faculty Of Science And Technology',
-    //   date: '2022, Today',
-    //   description:
-    //     "provides a strong foundation in essential aspects of data science and artificial intelligence. It covers topics like machine learning, knowledge engineering, and analyzing large datasets. The program also includes modules focused on development, offering practical skills in software development.",
-    // },
     {
-      title: "Full Stack JavaScript Developer with Generative AI Expertise",
-      location : 'PowerGo',
-      date: '1-Feb-2024, 1-Jul-2024',
-      description:`As a Full Stack JavaScript Developer, I am developing a web application designed to help
-      users access information and collect data using Large Language Models (LLM). This
-      application aims to assist users in obtaining grants by leveraging advanced AI techniques
-      to streamline the process and provide accurate, relevant information efficiently.
-      `
-    }
+      title: "Fullstack Developer | Commercial Management Web Application",
+      location: "Innov-DS, Fès, Maroc",
+      date: "05/2022 - 07/2022",
+      description: 
+        "Developed a commercial management application with process automation. Implemented user, item, and package management functionalities. Collaborated on the digital transformation of the company."
+    },
+    
   ],
   myEducation: [
     {
-      title: "Baccalaureate in Physical Sciences",
-      location: "Morocco",
-      date: "Sep-2017 , Jul-2018",
-      description: "The Baccalaureate in Physical Sciences is a high school diploma in Morocco that provides a strong foundation in physics, mathematics, and other sciences. This program equips students with essential analytical and problem-solving skills, preparing them for further studies in scientific and technical fields."
-    },
-    {
-      title: 'DEUST degree in Mathematics, Physics, and Computer Science.', 
-      location : 'Faculty Of Science And Technology',
-      date: 'Sep-2018 , Jul-2021',
-      description:
-        "The degree program provides a comprehensive education in mathematics, physics, and computer science, equipping me with essential skills in these domains.",
-    },
-    {
-      title: "Bachelor's degree in Computer Science.",
-      location : 'Faculty Of Science And Technology',
-      date: 'Sep-2021, Jul-2022',
-      description:
-        'This degree has provided me with a fundamental understanding of computer science and its basic concepts. It has equipped me with essential skills in various areas of computer science, allowing me to grasp the foundational principles and concepts in the field.',
+      title:"Data Science and Engineering.",
+      location : 'Faculty of Science, Aix-Marseille University',
+      date: 'Sep-2024, Sep-2025',
+      description: "This program provides a deep understanding of data management, analysis, and Big Data processing. With a strong focus on machine learning, artificial intelligence, cloud computing, and advanced data technologies, it emphasizes hands-on experience and problem-solving skills. Students are trained to tackle complex data challenges, design innovative solutions, and apply cutting-edge techniques in real-world scenarios, making them well-prepared for careers in data-driven industries.",
     },
     {
       title: "Master's in Data Science & Intelligent Systems.",
@@ -95,18 +60,61 @@ export const myInfo:MyInfo = {
         "provides a strong foundation in essential aspects of data science and artificial intelligence. It covers topics like machine learning, knowledge engineering, and analyzing large datasets. The program also includes modules focused on development, offering practical skills in software development.",
     },
     {
-      title:"Data Science and Engineering.",
-      location : 'Faculty of Science, Aix-Marseille University',
-      date: 'Sep-2024, Sep-2025',
-      description: "This program provides a deep understanding of data management, analysis, and Big Data processing. With a strong focus on machine learning, artificial intelligence, cloud computing, and advanced data technologies, it emphasizes hands-on experience and problem-solving skills. Students are trained to tackle complex data challenges, design innovative solutions, and apply cutting-edge techniques in real-world scenarios, making them well-prepared for careers in data-driven industries.",
+      title: "Bachelor's degree in Computer Science.",
+      location : 'Faculty Of Science And Technology',
+      date: 'Sep-2021, Jul-2022',
+      description:
+        'This degree has provided me with a fundamental understanding of computer science and its basic concepts. It has equipped me with essential skills in various areas of computer science, allowing me to grasp the foundational principles and concepts in the field.',
     },
+    {
+      title: 'DEUST degree in Mathematics, Physics, and Computer Science.', 
+      location : 'Faculty Of Science And Technology',
+      date: 'Sep-2018 , Jul-2021',
+      description:
+        "The degree program provides a comprehensive education in mathematics, physics, and computer science, equipping me with essential skills in these domains.",
+    },
+    {
+      title: "Baccalaureate in Physical Sciences",
+      location: "Morocco",
+      date: "Sep-2017 , Jul-2018",
+      description: "The Baccalaureate in Physical Sciences is a high school diploma in Morocco that provides a strong foundation in physics, mathematics, and other sciences. This program equips students with essential analytical and problem-solving skills, preparing them for further studies in scientific and technical fields."
+    },
+
+
+
+
   ],
   areasOfInterst: [
 
     {
       title: 'Data Science',
+      description:"I enjoy extracting valuable insights from complex datasets, transforming raw data into meaningful conclusions that drive decision-making and innovation.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
+        fill="currentColor"
+        viewBox="0 0 20 20">
+        <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0z"/>
+        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+      </svg>
+      )
+    },
+    {
+      title: 'Data Engineering',
       description:
-       "I enjoy extracting valuable insights from complex datasets, transforming raw data into meaningful conclusions that drive decision-making and innovation.",
+        "I enjoy designing and managing robust data pipelines and architectures, ensuring data accessibility and reliability for analysis and decision-making.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
+        fill="currentColor"
+        viewBox="0 0 20 20">
+          <path d="M12.096 6.223A5 5 0 0 0 13 5.698V7c0 .289-.213.654-.753 1.007a4.5 4.5 0 0 1 1.753.25V4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.5 4.5 0 0 1-.813-.927Q8.378 15 8 15c-1.464 0-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13h.027a4.6 4.6 0 0 1 0-1H8c-1.464 0-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10q.393 0 .774-.024a4.5 4.5 0 0 1 1.102-1.132C9.298 8.944 8.666 9 8 9c-1.464 0-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777M3 4c0-.374.356-.875 1.318-1.313C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4"/>
+          <path d="M11.886 9.46c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+        </svg>
+      ),
+    },
+    {
+      title: 'Data Analysis',
+      description:"I enjoy analyzing and interpreting data to uncover trends and patterns, providing actionable insights that support strategic business decisions.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
         fill="currentColor"
@@ -117,74 +125,67 @@ export const myInfo:MyInfo = {
     },
     {
       title: 'Artificial Intelligence',
-      description:
-       "I enjoy building intelligent systems that can learn, adapt, and automate tasks, enhancing human capabilities and improving decision-making processes.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" 
+      description:"I enjoy building intelligent systems that can learn, adapt, and automate tasks, enhancing human capabilities and improving decision-making processes.",
+      icon: (<svg xmlns="http://www.w3.org/2000/svg" 
               fill="currentColor"
               viewBox="0 0 20 20"
               className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer">
           <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
         </svg>
       ),
-    },
-    {
-      title: 'Cloud Computing',
-      description: "I enjoy leveraging cloud platforms like AWS and Azure for scalable, flexible, and powerful data processing and storage solutions.",
-      icon: (
-<svg xmlns="http://www.w3.org/2000/svg" fill='currentColor' viewBox="0 0 20 20" className='w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer' version="1.1" >
-  <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
-</svg>
-      )
     },{
       title: 'Big Data',
       description:"I appreciate working with large-scale data, using distributed systems to manage, process, and analyze vast amounts of information efficiently.",
-      icon: (
-          <svg 
+      icon: ( <svg 
               xmlns="http://www.w3.org/2000/svg" 
               className="w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer"
               fill="currentColor"
               viewBox="0 0 20 20">
             <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313M13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A5 5 0 0 0 13 5.698M14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A5 5 0 0 0 13 8.698m0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525"/>
-        </svg>
-      ),
-    },
-
+        </svg>),
+    },{
+      title: 'Cloud Computing',
+      description: "I enjoy leveraging cloud platforms like AWS and Azure for scalable, flexible, and powerful data processing and storage solutions.",
+      icon: (<svg xmlns="http://www.w3.org/2000/svg" fill='currentColor' viewBox="0 0 20 20" className='w-8 h-8 text-primary-600 lg:w-12 lg:h-12 hover:text-black text-yellow-400 cursor-pointer' version="1.1" >
+  <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+</svg>)
+    }
+    
   ],
   technicalSkills: [
     {
-      skillTitle: 'Langages de programmation et Framework',
-      skillsName: [ "Python", 'SQL', 'Java','Spark',  "Flask"]
+        skillTitle: 'Langages de programmation et Framework',
+        skillsName: ["Python", "R", "SQL", "Flask"]
     },
     {
-      skillTitle: 'Data Science & AI',
-      skillsName: [ "Machine Learning",
-        "Deep Learning",
-        "NLP",
-        "Traitement d’image",
-      ]
+        skillTitle: 'Data Science & IA',
+        skillsName: ["Machine Learning (supervised and unsupervised)", "Deep Learning (CNN, RNN, LSTM)", "NLP", "LLMs", "Analyse de données"]
     },
     {
-      skillTitle: 'Business Intelligence',
-      skillsName: [ "Power BI", "Tableau"]
+        skillTitle: 'Business Intelligence',
+        skillsName: ["Power BI", "Tableau", "Visualisation de données (Matplotlib, Seaborn, Plotly)"]
     },
     {
-      skillTitle: 'Bases de données',
-      skillsName: ["MySQL","OracleDB","PostgreSQL", "MongoDB"]
+        skillTitle: 'Bases de données',
+        skillsName: ["MySQL", "PostgreSQL", "Cassandra", "MongoDB"]
     },
     {
-      skillTitle: 'Plateformes et Outils Big Data',
-      skillsName: ["Airflow", "Kafka", "Hadoop", "Apache Spark"]
+        skillTitle: 'Plateformes et Outils Big Data',
+        skillsName: ["Hadoop", "Spark", "Kafka"]
     },
     {
-      skillTitle: 'Outils',
-      skillsName: ["Git", "Docker", "MLOps"]
+        skillTitle: 'ETL & Data Warehousing',
+        skillsName: ["Conception et gestion de pipeline de données", "Airflow"]
     },
     {
-      skillTitle: 'Environnements Cloud :',
-      skillsName: [' AWS (S3,Redshift, Lambda)',' Azure']
+        skillTitle: 'Outils de développement',
+        skillsName: ["Git", "Docker", "Kubernetes", "MLOps", "CI/CD"]
+    },
+    {
+        skillTitle: 'Environnements Cloud',
+        skillsName: ["AWS", "Microsoft Azure"]
     }
-  ],
+],
   languages: [
     {
       name: 'Arabic',
@@ -242,7 +243,7 @@ export const myInfo:MyInfo = {
       ),
       stars: (
         <>
-          {[...Array(3)].map((e, i) => (
+          {[...Array(4)].map((e, i) => (
             <svg
               key={'P' + i}
               className="w-4 h-4 text-yellow-300"
@@ -254,7 +255,7 @@ export const myInfo:MyInfo = {
               <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
             </svg>
           ))}
-          {[...Array(2)].map((e, i) => (
+          {[...Array(1)].map((e, i) => (
             <svg
               key={'s'+i}
               className="w-4 h-4 text-gray-300 dark:text-gray-500"
@@ -376,36 +377,36 @@ export const myInfo:MyInfo = {
       typeWork : 'Individual Work ',
       techUsed : ['Python','Tensorflow','OpenCV','YOLO','CNN'],
     },
-    // {
-    //   id:59634,
-    //   title : "Migrating a Laravel-based Gestion Syndic Application to Next.js",
-    //   tags  : ['Development'],
-    //   date : 'Sep,2023 ',
-    //   fullDescription : "I successfully migrated an application from Laravel to Next.js, leveraging Next.js as the comprehensive framework for front-end and back-end development. To ensure a secure connection with a PostgreSQL database, I seamlessly integrated Prisma. Furthermore, I implemented authentication using NextAuth.js, along with incorporating additional Node.js libraries to enhance various functionalities within the application. This migration not only streamlined the development process but also fortified the application's security and expanded its capabilities through the integration of various powerful libraries.",
-    //   images : [
-    //     '/Images/gsyndic/1.png',
-    //     '/Images/gsyndic/2.png',
-    //     '/Images/gsyndic/3.png',
-    //     '/Images/gsyndic/4.png',
-    //   ],
-    //   techUsed : ['Nextjs','TypeScript','Prisma','NextAuth','Redux-Toolkit'],
-    //   typeWork : 'Individual Work ' 
-    // },
-    // {
-    //   id:32509,
-    //   title : "Personal Portfolio built with Next.js and Tailwind CSS",
-    //   tags  : ['Development'],
-    //   date : 'July,2023',
-    //   fullDescription : "The website was developed using Next.js and Tailwind CSS by Ayoub Boudra. It is hosted on Vercel.",
-    //   images : [
-    //     '/Images/portfolio/1.png',
-    //     '/Images/portfolio/2.png',
-    //     '/Images/portfolio/3.png',
+    {
+      id:59634,
+      title : "Migrating a Laravel-based Gestion Syndic Application to Next.js",
+      tags  : ['Development'],
+      date : 'Sep,2023 ',
+      fullDescription : "I successfully migrated an application from Laravel to Next.js, leveraging Next.js as the comprehensive framework for front-end and back-end development. To ensure a secure connection with a PostgreSQL database, I seamlessly integrated Prisma. Furthermore, I implemented authentication using NextAuth.js, along with incorporating additional Node.js libraries to enhance various functionalities within the application. This migration not only streamlined the development process but also fortified the application's security and expanded its capabilities through the integration of various powerful libraries.",
+      images : [
+        '/Images/gsyndic/1.png',
+        '/Images/gsyndic/2.png',
+        '/Images/gsyndic/3.png',
+        '/Images/gsyndic/4.png',
+      ],
+      techUsed : ['Nextjs','TypeScript','Prisma','NextAuth','Redux-Toolkit'],
+      typeWork : 'Individual Work ' 
+    },
+    {
+      id:32509,
+      title : "Personal Portfolio built with Next.js and Tailwind CSS",
+      tags  : ['Development'],
+      date : 'July,2023',
+      fullDescription : "The website was developed using Next.js and Tailwind CSS by Ayoub Boudra. It is hosted on Vercel.",
+      images : [
+        '/Images/portfolio/1.png',
+        '/Images/portfolio/2.png',
+        '/Images/portfolio/3.png',
     
-    //   ],
-    //   techUsed : ['Nextjs','TypeScript',],
-    //   typeWork : 'Individual Work ' 
-    // },
+      ],
+      techUsed : ['Nextjs','TypeScript',],
+      typeWork : 'Individual Work ' 
+    },
     {
       id:43209,
       title : "Exploring Car Price Data in Morocco: Collection and Cleaning",
@@ -437,7 +438,7 @@ export const myInfo:MyInfo = {
     {
       id:1,
       title : "Facial-Based Age and Gender Detection",
-      tags  : ['Data & AI','Computer Vision'],
+      tags  : ['Data & AI'],
       date : 'April,2023',
       fullDescription : "This project involved collecting and cleaning a dataset of over 25,000 facial images. We conducted experiments with different models to achieve optimal results for facial analysis tasks such as age and gender detection. Finally, we successfully implemented the chosen model into a web application for practical usage.",
       images : [
@@ -466,91 +467,91 @@ export const myInfo:MyInfo = {
       techUsed : ['Python','PyQT','OpenCV'],
       typeWork : 'Team Work ' 
     },
-    // {
-    //   id:4,
-    //   title : "Resource Management",
-    //   tags  : ['Development'],
-    //   date : 'April,2022',
-    //   fullDescription : "This website, developed using Next.js and Spring Boot, is designed for efficient management of stock, orders, suppliers, and repair requests. The development process involved utilizing UML diagrams for the initial design and adopting Scrumwise for effective team management. The website serves as a comprehensive solution, providing capabilities to track and manage inventory, process orders, handle supplier relationships, and efficiently manage repair requests.",
-    //   images : [
-    //     '/Images/no-image-available.jpg',
-    //   ],
-    //   techUsed : ['Spring Boot','Spring Security','JWT','NextJS','Scrum-wise','UML','MySQL'],
-    //   typeWork : 'Team Work' 
-    // },
-    // {
-    //   id:5,
-    //   title : "E-commerce Website for Computer Equipment using JEE",
-    //   tags  : ['Development'],
-    //   date : 'Dec,2021',
-    //   fullDescription : "This e-commerce website, built using Java Enterprise Edition (JEE), serves as an online platform for selling computer machines. In addition to the customer-facing frontend, it includes an administrative section. The admin side allows authorized users to efficiently manage orders and products. This feature empowers administrators to handle order processing, inventory management, and product updates, ensuring smooth operations of the e-commerce business.",
-    //   images : [
-    //     '/Images/no-image-available.jpg',
-    //   ],
-    //   techUsed : ['Java','JEE','MySql','N-tier architecture'],
-    //   typeWork : 'Individual Work ' 
-    // },
-    // {
-    //   id:98765,
-    //   title : "Weather Application with Angular and Weather API",
-    //   tags  : ['Development'],
-    //   date : 'July,2021',
-    //   fullDescription : "The Weather Application is a responsive Angular application that allows users to search for a city and retrieve the current weather information for that location. Powered by a free weather API's RESTful interface, the application seamlessly integrates with the API to fetch real-time weather data. Users can simply enter the desired city name in the search bar, and the application dynamically displays the current weather conditions, including temperature, humidity, wind speed, and more. With its user-friendly interface and reliable data source, the Weather Application provides an intuitive way to stay updated on the weather conditions of any desired city.",
-    //   images : [
-    //     '/Images/weather/1.png',
-    //     '/Images/weather/2.png',
-    //     '/Images/weather/3.png',
+    {
+      id:4,
+      title : "Resource Management",
+      tags  : ['Development'],
+      date : 'April,2022',
+      fullDescription : "This website, developed using Next.js and Spring Boot, is designed for efficient management of stock, orders, suppliers, and repair requests. The development process involved utilizing UML diagrams for the initial design and adopting Scrumwise for effective team management. The website serves as a comprehensive solution, providing capabilities to track and manage inventory, process orders, handle supplier relationships, and efficiently manage repair requests.",
+      images : [
+        '/Images/no-image-available.jpg',
+      ],
+      techUsed : ['Spring Boot','Spring Security','JWT','NextJS','Scrum-wise','UML','MySQL'],
+      typeWork : 'Team Work' 
+    },
+    {
+      id:5,
+      title : "E-commerce Website for Computer Equipment using JEE",
+      tags  : ['Development'],
+      date : 'Dec,2021',
+      fullDescription : "This e-commerce website, built using Java Enterprise Edition (JEE), serves as an online platform for selling computer machines. In addition to the customer-facing frontend, it includes an administrative section. The admin side allows authorized users to efficiently manage orders and products. This feature empowers administrators to handle order processing, inventory management, and product updates, ensuring smooth operations of the e-commerce business.",
+      images : [
+        '/Images/no-image-available.jpg',
+      ],
+      techUsed : ['Java','JEE','MySql','N-tier architecture'],
+      typeWork : 'Individual Work ' 
+    },
+    {
+      id:98765,
+      title : "Weather Application with Angular and Weather API",
+      tags  : ['Development'],
+      date : 'July,2021',
+      fullDescription : "The Weather Application is a responsive Angular application that allows users to search for a city and retrieve the current weather information for that location. Powered by a free weather API's RESTful interface, the application seamlessly integrates with the API to fetch real-time weather data. Users can simply enter the desired city name in the search bar, and the application dynamically displays the current weather conditions, including temperature, humidity, wind speed, and more. With its user-friendly interface and reliable data source, the Weather Application provides an intuitive way to stay updated on the weather conditions of any desired city.",
+      images : [
+        '/Images/weather/1.png',
+        '/Images/weather/2.png',
+        '/Images/weather/3.png',
 
-    //   ],
-    //   techUsed : ['Java','JEE','MySql','N-tier architecture'],
-    //   typeWork : 'Individual Work ' 
-    // },
-    // {
-    //   id:6,
-    //   title : "Resource management for a leather company",
-    //   tags  : ['Development'],
-    //   date : 'May,2021 - Juin,2021',
-    //   fullDescription : "A compact application built with Next.js, Spring Boot, and other technologies specifically designed for an international leather company. It effectively manages stock, client transactions, orders, suppliers, and other essential operations.",
-    //   images : [
-    //     '/Images/gescom/1.png',
-    //     '/Images/gescom/2.png',
-    //     '/Images/gescom/3.png',
-    //     '/Images/gescom/4.png',
-    //     '/Images/gescom/5.png',
-    //   ],
-    //   techUsed : ['NextJS','Redux-Toolkit','TypeScript','Spring Boot','Keyclock','Next-Auth','JWT','PostgreSQL','Jira'],
-    //   typeWork : 'Team Work' 
-    // },
-    // {
-    //   id:7,
-    //   title : ' Library Management Application with JAVA Swing',
-    //   tags  : ['Development'],
-    //   date : 'Mars,2021',
-    //   fullDescription : " library management application developed using JAVA Swing. UML models, including class diagrams and activity diagrams..., MySQL as the database, and JDBC for database interaction. The application provides advanced features, including book return management, book search, and more.",
-    //   images : [
-    //     '/Images/swing/1.png',
-    //     '/Images/swing/2.png',
-    //     '/Images/swing/3.png',
-    //     '/Images/swing/4.png',
-    //   ],
-    //   techUsed : ['Java','Java Swing','UML','MySql'],
-    //   typeWork : 'Team Work' 
-    // },
-    // {
-    //   id:8,
-    //   title : 'United States - Tourism and News Website',
-    //   date : 'Dec,2020',
-    //   tags  : ['Development'],
-    //   fullDescription : 'web platform that provides detailed information about the United States as a tourist destination. With insights into diverse attractions, culture, landmarks, and more, it serves as a valuable resource for travelers. Stay updated with the latest events and developments through the dedicated news section. The admin panel ensures effortless content management, keeping tourist information current and enabling the addition of new attractions and timely news articles.',
-    //   images : [
-    //     '/Images/Blog/1.png',
-    //     '/Images/Blog/2.png',
-    //     '/Images/Blog/3.png',
+      ],
+      techUsed : ['Java','JEE','MySql','N-tier architecture'],
+      typeWork : 'Individual Work ' 
+    },
+    {
+      id:6,
+      title : "Resource management for a leather company",
+      tags  : ['Development'],
+      date : 'May,2021 - Juin,2021',
+      fullDescription : "A compact application built with Next.js, Spring Boot, and other technologies specifically designed for an international leather company. It effectively manages stock, client transactions, orders, suppliers, and other essential operations.",
+      images : [
+        '/Images/gescom/1.png',
+        '/Images/gescom/2.png',
+        '/Images/gescom/3.png',
+        '/Images/gescom/4.png',
+        '/Images/gescom/5.png',
+      ],
+      techUsed : ['NextJS','Redux-Toolkit','TypeScript','Spring Boot','Keyclock','Next-Auth','JWT','PostgreSQL','Jira'],
+      typeWork : 'Team Work' 
+    },
+    {
+      id:7,
+      title : ' Library Management Application with JAVA Swing',
+      tags  : ['Development'],
+      date : 'Mars,2021',
+      fullDescription : " library management application developed using JAVA Swing. UML models, including class diagrams and activity diagrams..., MySQL as the database, and JDBC for database interaction. The application provides advanced features, including book return management, book search, and more.",
+      images : [
+        '/Images/swing/1.png',
+        '/Images/swing/2.png',
+        '/Images/swing/3.png',
+        '/Images/swing/4.png',
+      ],
+      techUsed : ['Java','Java Swing','UML','MySql'],
+      typeWork : 'Team Work' 
+    },
+    {
+      id:8,
+      title : 'United States - Tourism and News Website',
+      date : 'Dec,2020',
+      tags  : ['Development'],
+      fullDescription : 'web platform that provides detailed information about the United States as a tourist destination. With insights into diverse attractions, culture, landmarks, and more, it serves as a valuable resource for travelers. Stay updated with the latest events and developments through the dedicated news section. The admin panel ensures effortless content management, keeping tourist information current and enabling the addition of new attractions and timely news articles.',
+      images : [
+        '/Images/Blog/1.png',
+        '/Images/Blog/2.png',
+        '/Images/Blog/3.png',
 
-    //   ],
-    //   techUsed : ['HTML','CSS','JavaScript','PHP','MySql'],
-    //   typeWork : 'Individual Work ' 
-    // },
+      ],
+      techUsed : ['HTML','CSS','JavaScript','PHP','MySql'],
+      typeWork : 'Individual Work ' 
+    },
 
   ],
   footerDescription : "The website was developed using Next.js and Tailwind CSS by Ayoub Boudra. It is hosted on Vercel."
