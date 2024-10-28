@@ -436,6 +436,18 @@ export const myInfo:MyInfo = {
       typeWork : 'Individual Work ' 
     },
     {
+      id: 2,
+      title: "Colon Disease Detection with PySpark MLlib",
+      tags: ['Big Data', 'Healthcare', 'Machine Learning'],
+      date: '2023',
+      fullDescription: "This project aimed to detect colon diseases using PySpark MLlib for processing and analyzing large medical datasets. Steps included data collection, cleaning, and visualization to identify key trends. Machine learning models were then trained to predict the presence of colon diseases, providing accurate results and enabling clear visualizations to enhance data understanding.",
+      images: [
+        '/Images/pyspark_maladie_coloniane.png',
+      ],
+      techUsed: ['PySpark', 'MLlib', 'Data Visualization', 'Python'],
+      typeWork: 'Team Work'
+    },    
+    {
       id:1,
       title : "Facial-Based Age and Gender Detection",
       tags  : ['Data & AI'],
