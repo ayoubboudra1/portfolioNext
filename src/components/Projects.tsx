@@ -21,7 +21,7 @@ export interface ProjectsProps {
 
 function Projects() {
 
-  const [categories,setCategories] = useState('Data & AI')
+  const [categories,setCategories] = useState('Data Science')
   // const [content,setContent] = useState<ProjectProps>(project0)
 
   // const [isModalOpen, setIsModalOpen] = useState(false);

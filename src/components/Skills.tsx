@@ -40,7 +40,7 @@ function Skills() {
             transition={{ duration: 0.7 }}
             className="p-5 mx-5 my-10 md:mx-20 border border-white rounded-lg bg-white shadow-md"
           >
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 ">
+            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 ">
               Technical Skills
             </h1>
             <div className="gap-8 sm:grid sm:grid-cols-1 mx-10">
